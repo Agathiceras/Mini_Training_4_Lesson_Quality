@@ -66,17 +66,17 @@ const CONTENT = {
   buildModules(){
     return [
 {id:'intro', numLabel:'Pendahuluan', emoji:'🧩', color:'var(--coral)',
- title:'Mengapa Kamu di Sini',
- desc:'Mengapa alasan ini layak mendapat evaluasi diri yang jujur dan spesifik — dan aturan yang berlaku jika permintaan refund sudah masuk.',
+ title:'Kenapa Penting Memahaminya',
+ desc:'Mengapa keluhan soal kualitas kelas perlu disikapi dengan evaluasi diri yang jujur dan spesifik, hingga do and don’ts jika permintaan refund sudah masuk',
  obj:'Memahami bahwa alasan ini berkaitan dengan pelajarannya sendiri, mengapa meminta bantuan sejak awal adalah langkah yang tepat, dan apa persisnya yang harus (dan tidak boleh) dilakukan jika permintaan refund sudah ada.',
  sections:[
   {t:'🪞 Alasan yang paling sulit didengar', html:`
-   <div class="card"><p>Alasan ini berarti sebuah keluarga merasa <strong>kualitas pelajarannya sendiri</strong> yang menjadi masalah — bukan anaknya, bukan levelnya, bukan jadwalnya. Ini lebih sulit didengar dibanding sebagian besar alasan lainnya, dan wajar jika muncul keinginan untuk membela diri atau mencari pembenaran.</p></div>
+   <div class="card"><p>Alasan ini berarti ada keluarga yang merasa <strong>kualitas pelajarannya lah</strong> yang menjadi masalah — bukan anaknya, bukan levelnya, bukan jadwalnya. Alasan ini lebih sulit diterima dibanding alasan lainnya, dan wajar jika kamu ingin membela diri atau mencari pembenaran.</p></div>
    ${co('co-idea','💡',`<p><strong>Ini bukan penilaian atas dirimu sebagai pribadi.</strong> Ini adalah sinyal tentang perilaku tertentu yang bisa diperbaiki, di pelajaran-pelajaran tertentu. Tutor yang menanggapinya dengan serius dan spesifik — bukan secara pribadi — adalah yang paling cepat memperbaikinya.</p>`)}
    ${co('co-star','🎓',`<p><strong>Minta pandangan dari luar tentang caramu mengajar sejak awal.</strong> Regional Mentor-mu ada justru untuk hal ini — meminta masukan tentang caramu mengajar adalah langkah yang tepat, bukan tanda bahwa ada yang salah denganmu.</p>`)}
   `},
   {t:'🛟 Jika permintaan refund sudah ada', html:`
-   <div class="card"><p>Semua hal di atas adalah tentang menangkap tanda ini sejak dini. Tapi mungkin kamu membuka pelatihan ini karena sebuah keluarga <strong>sudah</strong> mengajukan refund. Aturan di bawah ini berlaku apa pun alasannya — baca dulu, lalu gunakan sisa pelatihan ini untuk memahami apa yang menyebabkannya dan apa yang masih bisa kamu lakukan di kelas.</p></div>
+   <div class="card"><p>Semua hal di atas adalah cara menyadari tanda ini sejak dini. Tapi mungkin kamu membuka pelatihan ini karena ada keluarga yang <strong>sudah</strong> mengajukan refund. Aturan di bawah ini berlaku apa pun alasannya. Baca dulu, lalu gunakan materi selanjutnya di pelatihan ini untuk memahami apa yang menyebabkannya dan apa yang masih bisa kamu lakukan di kelas.</p></div>
    ${co('co-idea','💡',`<p><strong>Permintaannya sendiri dibuat oleh Client Service, bukan oleh kamu</strong> — bagian itu bukan wewenangmu. Yang masih menjadi bagianmu adalah semua yang terjadi di kelas mulai sekarang, dan itu bukan hal kecil.</p>`)}
    ${co('co-danger','🤐',`<p><strong>Jangan membicarakan permintaan refund itu sama sekali</strong> — tidak kepada anak, tidak kepada keluarga — kecuali Client Service secara jelas memintamu menyampaikan sesuatu yang spesifik. Tugasmu sekarang adalah pelajarannya, bukan percakapan itu.</p>`)}
   `},
@@ -106,7 +106,7 @@ const CONTENT = {
 },
 {id:'structure', numLabel:'Modul 1', emoji:'🧭', color:'var(--coral)',
  title:'Struktur Pelajaran',
- desc:'Struktur cermin sembilan fase yang membuat pelajaran terasa lengkap, dengan contoh dari kelas sungguhan, dan cara membaca evaluasi kualitasmu sendiri.',
+ desc:'Sembilan fase pelajaran yang saling mencerminkan dan membuat pelajaran terasa lengkap, contoh dari kelas sungguhan, serta cara membaca evaluasi kualitasmu sendiri.',
  obj:'Memahami mengapa struktur pelajaran yang konsisten adalah salah satu faktor terkuat untuk kualitas pelajaran, mempelajari sembilan fasenya, dan mengetahui cara membaca evaluasi kualitasmu untuk melihat persis di bagian mana kamu kehilangan perhatian kelas.',
  sections:[
   {t:'🧭 Konsistensi adalah kuncinya', html:`
@@ -123,26 +123,26 @@ const CONTENT = {
   {t:'🎨 Bagian tengah: teori & praktik', html:`
    <div class="card"><p>Tahap terpanjang, saat materi baru diajarkan dan langsung dipraktikkan. Sampaikan teori dalam potongan-potongan kecil — satu konsep, lalu langsung praktik — dan <strong>contohkan dulu</strong>: peragakan di layarmu sebelum siswa mencobanya di layar mereka. Jaga waktu praktik dengan sungguh-sungguh; pelajaran di mana anak-anak hanya menontonmu bekerja adalah pelajaran di mana tidak ada yang benar-benar berlatih.</p></div>
   `},
-  {t:'🏁 Bagian akhir: cerminnya', html:`
-   <div class="card"><p>Empat fase penutup mencerminkan fase pembuka dalam urutan terbalik — pelajaran berakhir seperti saat dimulai, memberikan rasa tuntas dan ritme.</p></div>
+  {t:'Bagian akhir: cerminan bagian awal', html:`
+   <div class="card"><p>Empat fase penutup adalah cerminan dari empat fase pembuka dengan urutan terbalik — pelajaran ditutup seperti saat dibuka, sehingga terasa tuntas dan berirama.</p></div>
    ${timeline([
      {ic:'📋', label:'1 · Ringkasan Pelajaran', items:['Ulas kembali apa yang sudah dibahas, tapi biarkan siswa juga merangkumnya — kata-kata mereka sendiri menunjukkan apa yang benar-benar dipahami.'], video:'https://drive.google.com/file/d/1jNZGDMnRYh83xGd2NVHrZTdgXLagi2GZ/preview'},
      {ic:'📖', label:'2 · Pemberian PR', items:['Instruksi yang sangat jelas tentang apa yang harus dikerjakan dan bagaimana caranya. PR yang tidak jelas adalah PR yang tidak akan dikerjakan.'], video:'https://drive.google.com/file/d/1qOYvENqjiYlwRaFvDb0A7W6JYgWPCjJc/preview'},
-     {ic:'▶️', label:'3 · Pratinjau Pelajaran Berikutnya', items:['Beri bocoran tentang apa yang akan datang — ini membuat siswa tetap terlibat secara emosional, bukan sekadar mengikuti daftar tugas.'], video:'https://drive.google.com/file/d/17bE6JdZmDFJ_igrWYhc7fnpD39b-k-2K/preview'},
-     {ic:'✨', label:'4 · Penutup', items:['Akhiri dengan semangat: rayakan apa yang sudah dibuat siswa. 30 detik terakhir adalah hal yang mereka pertimbangkan saat memutuskan apakah akan hadir lagi di pertemuan berikutnya.'], video:'https://drive.google.com/file/d/1OTYSh07wSosjgsHFD05YvccD3NY2CgsX/preview'}
+     {ic:'▶️', label:'3 · Pratinjau Pelajaran Berikutnya', items:['Beri bocoran tentang materi pertemuan berikutnya — ini membuat siswa penasaran dan menantikan kelas selanjutnya, bukan sekadar menjalankan daftar tugas.'], video:'https://drive.google.com/file/d/17bE6JdZmDFJ_igrWYhc7fnpD39b-k-2K/preview'},
+     {ic:'✨', label:'4 · Penutup', items:['Menemukan kekurangan sehari sebelumnya lalu meminta bantuan adalah tanda bahwa sistemnya berjalan dengan baik. Waktu persiapan yang cukup justru untuk mencegah kamu baru menemukannya di tengah pelajaran.'], video:'https://drive.google.com/file/d/1OTYSh07wSosjgsHFD05YvccD3NY2CgsX/preview'}
    ])}
   `},
   {t:'📊 Membaca evaluasi kualitasmu', html:`
-   <div class="card"><p>Evaluasi kualitasmu dipetakan langsung ke fase-fase ini — tujuannya untuk menunjukkan persis di bagian mana dari struktur ada yang terlewat: pemanasan yang terlewat, tujuan yang tidak pernah disampaikan, waktu praktik yang terpotong, penutup yang tidak pernah terjadi.</p></div>
-   ${co('co-idea','💡',`<p><strong>Baca per fase, bukan sebagai satu skor keseluruhan.</strong> Skor rendah tanpa konteks tidak banyak memberi tahu; skor rendah pada “Tujuan Pelajaran” atau “Penutup” memberi tahu persis apa yang perlu diubah di pelajaranmu berikutnya.</p>`)}
+   <div class="card"><p>Evaluasi kualitasmu disusun berdasarkan fase-fase ini — tujuannya untuk menunjukkan bagian mana dari struktur yang terlewat: pemanasan yang dilewati, tujuan yang tidak disampaikan, waktu praktik yang terpotong, atau penutup yang tidak dilakukan.</p></div>
+   ${co('co-idea','💡',`<p><strong>Baca per fase, bukan sebagai satu skor keseluruhan.</strong> Skor keseluruhan yang rendah tidak banyak membantu; skor rendah pada “Tujuan Pelajaran” atau “Penutup” menunjukkan dengan jelas apa yang perlu diubah di pelajaranmu berikutnya.</p>`)}
   `}
  ],
  ix:{
   title:'Struktur Pelajaran — cek modul',
-  instr:'Lima ronde singkat: tempatkan setiap fase di pelajaran, dan tebak fase mana yang sedang dijelaskan. 70% untuk membuka modul berikutnya.',
+  instr:'Lima soal singkat: tentukan posisi setiap fase dalam pelajaran, dan tebak fase mana yang sedang dijelaskan. 70% untuk membuka modul berikutnya.',
   items:[
    {type:'sort', prompt:'Di mana fase ini berada?', card:'▶️ Pratinjau Pelajaran Berikutnya', zones:[{label:'🌅 Salah satu dari 4 fase pembuka', fb:'Belum tepat — Pratinjau Pelajaran Berikutnya adalah bagian dari blok penutup yang mencerminkan pembuka, bukan bagian pembuka.'},{label:'🏁 Salah satu dari 4 fase penutup', fb:'Benar — ini fase ketiga dari empat fase penutup, tepat sebelum Penutup.'}], correctZone:1},
-   {type:'sort', prompt:'Fase mana yang sedang dijelaskan?', card:'“Momen ini memberi tahu siswa untuk apa pelajaran hari ini. Tanpanya, mereka tidak tahu apa yang sedang mereka tuju — dan cepat kehilangan minat.”', zones:[{label:'👋 Pemanasan', fb:'Belum tepat — Pemanasan mengalihkan siswa ke mode belajar, tapi tidak menyampaikan untuk apa pelajaran hari ini. Itu adalah Tujuan Pelajaran.'},{label:'🎯 Tujuan Pelajaran', fb:'Benar — menyampaikan Tujuan Pelajaran dengan jelas memberi seluruh pelajaran arah yang bisa diikuti siswa.'},{label:'📋 Ringkasan Pelajaran', fb:'Belum tepat — Ringkasan melihat kembali apa yang sudah dibahas. Menyampaikan untuk apa pelajaran hari ini dilakukan di awal: Tujuan Pelajaran.'},{label:'✨ Penutup', fb:'Belum tepat — Penutup mengakhiri pelajaran. Mengetahui untuk apa pelajaran hari ini terjadi di awal: Tujuan Pelajaran.'}], correctZone:1},
+   {type:'sort', prompt:'Fase mana yang sedang dijelaskan?', card:'“Momen ini memberi tahu siswa apa tujuan pelajaran hari ini. Tanpanya, mereka tidak tahu arah belajarnya — dan cepat kehilangan minat.”', zones:[{label:'👋 Pemanasan', fb:'Belum tepat — Pemanasan mengalihkan siswa ke mode belajar, tapi tidak menyampaikan untuk apa pelajaran hari ini. Itu adalah Tujuan Pelajaran.'},{label:'🎯 Tujuan Pelajaran', fb:'Benar — menyampaikan Tujuan Pelajaran dengan jelas memberi seluruh pelajaran arah yang bisa diikuti siswa.'},{label:'📋 Ringkasan Pelajaran', fb:'Belum tepat — Ringkasan melihat kembali apa yang sudah dibahas. Menyampaikan untuk apa pelajaran hari ini dilakukan di awal: Tujuan Pelajaran.'},{label:'✨ Penutup', fb:'Belum tepat — Penutup mengakhiri pelajaran. Mengetahui untuk apa pelajaran hari ini terjadi di awal: Tujuan Pelajaran.'}], correctZone:1},
    {type:'sort', prompt:'Di mana fase ini berada?', card:'📖 Ulasan Pelajaran Sebelumnya', zones:[{label:'🌅 Salah satu dari 4 fase pembuka', fb:'Benar — ini fase kedua dari empat fase pembuka, tepat setelah Pemanasan.'},{label:'🏁 Salah satu dari 4 fase penutup', fb:'Belum tepat — Ulasan Pelajaran Sebelumnya membuka pelajaran, bukan menutupnya.'}], correctZone:0},
    {type:'sort', prompt:'Fase mana yang sedang dijelaskan?', card:'“Membiarkan siswa mengungkapkan apa yang dia pelajari hari ini dengan kata-katanya sendiri menunjukkan apa yang benar-benar dipahami — dan apa yang perlu diperkuat di pertemuan berikutnya.”', zones:[{label:'📖 Ulasan Pelajaran Sebelumnya', fb:'Hampir — tapi fase itu mengulas pelajaran <em>sebelumnya</em>. Mengungkapkan pelajaran <em>hari ini</em> dengan kata-kata sendiri adalah Ringkasan Pelajaran.'},{label:'📋 Cek PR', fb:'Belum tepat — Cek PR membahas pekerjaan rumah. Ini adalah Ringkasan Pelajaran.'},{label:'▶️ Pratinjau Pelajaran Berikutnya', fb:'Belum tepat — Pratinjau melihat ke depan. Mengulas pelajaran hari ini dengan kata-kata sendiri adalah Ringkasan Pelajaran.'},{label:'📋 Ringkasan Pelajaran', fb:'Benar — Ringkasan Pelajaran memungkinkanmu mengecek apa yang benar-benar dipahami, dengan kata-kata siswa sendiri.'}], correctZone:3},
    {type:'sort', prompt:'Fase mana yang sedang dijelaskan?', card:'“30 detik terakhir adalah hal yang dipertimbangkan siswa saat memutuskan apakah akan hadir lagi — jadi akhiri dengan merayakan apa yang sudah mereka buat.”', zones:[{label:'✨ Penutup', fb:'Benar — Penutup mengakhiri pelajaran dengan semangat, dan perasaan itulah yang membuat siswa kembali.'},{label:'📖 Pemberian PR', fb:'Belum tepat — Pemberian PR adalah tentang instruksi yang jelas. Mengakhiri dengan semangat adalah Penutup.'},{label:'🎯 Tujuan Pelajaran', fb:'Belum tepat — Tujuan Pelajaran terjadi di awal. Ini adalah Penutup.'},{label:'👋 Pemanasan', fb:'Belum tepat — Pemanasan membuka pelajaran. 30 detik terakhir adalah milik Penutup.'}], correctZone:0}
@@ -151,11 +151,11 @@ const CONTENT = {
 },
 {id:'prep', numLabel:'Modul 2', emoji:'📚', color:'var(--coral)',
  title:'Waktu Persiapan',
- desc:'Mengapa mempelajari panduan sehari sebelumnya, bukan tiga puluh menit sebelumnya, adalah hal yang benar-benar menjaga kualitas pelajaran — dan di mana menemukannya di BO.',
+ desc:'Mengapa mempelajari panduan sehari sebelum kelas (bukan 30 menit sebelumnya) sangat menentukan kualitas pelajaran — dan di mana menemukannya di BO.',
  obj:'Mempersiapkan pelajaran dengan waktu yang cukup untuk menemukan kekurangan sebelum pelajaran dimulai, menemukan materi yang tepat di BackOffice, dan tahu persis ke mana harus meminta bantuan atau melaporkan masalah materi.',
  sections:[
   {t:'⏳ Bukan tiga puluh menit sebelumnya', html:`
-   <div class="card"><p>Persiapan yang dilakukan setengah jam — atau sepuluh menit — sebelum kelas tidak menyisakan ruang untuk benar-benar mempelajari hal yang belum kamu kuasai. Jika ada konsep, potongan kode, atau alat yang belum kamu kuasai, kamu akan mempelajarinya secara langsung, di depan siswa.</p></div>
+   <div class="card"><p>Persiapan yang dilakukan setengah jam — atau bahkan sepuluh menit — sebelum kelas tidak menyisakan waktu untuk benar-benar mempelajari hal yang belum kamu pahami. Jika ada konsep, potongan kode, atau alat yang belum kamu kuasai, kamu terpaksa mempelajarinya saat kelas berlangsung, di depan siswa.</p></div>
    ${co('co-idea','💡',`<p><strong>Pelajari panduan dan materinya sehari sebelumnya.</strong> Dengan begitu kamu punya waktu untuk menyadari kekurangan dalam pengetahuanmu sendiri, bug di materi, atau aktivitas yang belum sepenuhnya kamu pahami — dan benar-benar melakukan sesuatu sebelum pelajaran dimulai.</p>`)}
   `},
   {t:'🎯 Pahami tujuannya, bukan hanya langkah-langkahnya', html:`
@@ -171,7 +171,7 @@ const CONTENT = {
    ${co('co-star','⭐',`<p>Menemukan kekurangan sehari sebelumnya lalu meminta bantuan adalah tanda bahwa sistemnya berjalan sebagaimana mestinya. Menemukannya secara langsung, di tengah pelajaran, adalah hal yang ingin dicegah dengan waktu persiapan.</p>`)}
   `},
   {t:'🗂️ Menemukan materi kursusmu di BO', html:`
-   <div class="card"><p>Panduan pelajaran dan presentasi ada di dalam BackOffice (BO), terlampir pada data kursus yang persis sedang kamu ajarkan — bukan di halaman wiki lama yang mungkin sudah tidak terbaru. Simulasi di bawah ini akan memandumu, langkah demi langkah, ke tempat menemukannya, dan ke mana melaporkannya jika ada yang salah di materinya.</p></div>
+   <div class="card"><p>Panduan pelajaran dan presentasi ada di dalam BackOffice (BO), terlampir di data kursus yang sedang kamu ajarkan — bukan di halaman wiki lama yang mungkin sudah tidak diperbarui. Simulasi di bawah ini akan memandumu, langkah demi langkah, ke tempat menemukannya, dan ke mana melaporkannya jika ada yang salah di materinya.</p></div>
    ${co('co-danger','🚨',`<p><strong>Selalu pastikan ID kursus yang kamu buka sama dengan kursus yang diikuti siswamu.</strong> Kursus-kursus yang tampak mirip ada berdampingan di BO — mengajar dari kursus yang salah, bahkan versi lain dari kursus yang sama, bisa membuat pelajaran kacau dalam hitungan detik.</p>`)}
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Materi kursus &amp; kesalahan materi</span><iframe src="Simulacion_BO_CourseMaterial.html" title="BO — Materi kursus dan kesalahan materi" loading="lazy"></iframe></div></div>
   `}
@@ -181,7 +181,7 @@ const CONTENT = {
   instr:'70% untuk membuka modul berikutnya.',
   items:[
    {type:'choice', prompt:'Kapan sebaiknya kamu mempelajari panduan dan materi untuk sebuah pelajaran?', opts:['Sehari sebelumnya, supaya ada waktu untuk memperbaiki kekurangan yang kamu temukan','Tepat sebelum kelas, supaya masih segar di ingatan','Hanya jika itu pelajaran yang belum pernah kamu ajarkan'], correct:0, fb:'Sehari sebelumnya memberimu waktu untuk benar-benar menangani apa pun yang kamu temukan — kekurangan, bug, atau aktivitas yang belum sepenuhnya kamu pahami.'},
-   {type:'choice', prompt:'Kamu menemukan potongan kode di panduan yang tidak berfungsi. Apa yang kamu lakukan?', opts:['Melewatkan bagian itu dan berharap tidak ada yang sadar','Mencari solusinya secara langsung saat pelajaran bersama siswa','Bertanya di channel Slack kursusmu, kepada mentor, atau Team Leader-mu — dan melaporkannya lewat ikon 🐞 di BO'], correct:2, fb:'Saluran-saluran ini ada justru supaya kamu tidak perlu menyelesaikannya secara langsung, sendirian — dan dengan melaporkannya, masalahnya diperbaiki untuk semua grup setelah grupmu.'},
+   {type:'choice', prompt:'Kamu menemukan potongan kode di panduan yang tidak berfungsi. Apa yang kamu lakukan?', opts:['Melewatkan bagian itu dan berharap tidak ada yang sadar','Mencari solusinya secara langsung saat pelajaran bersama siswa','Bertanya di channel Slack kursusmu, kepada mentor, atau Team Leader-mu — dan melaporkannya lewat ikon 🐞 di BO'], correct:2, fb:'Channel-channel ini ada supaya kamu tidak perlu menyelesaikannya sendirian di tengah kelas — dan dengan melaporkannya, masalahnya akan diperbaiki untuk grup-grup lain setelahmu.'},
    {type:'choice', prompt:'Sebelum membuka panduan pelajaran di BO, apa yang harus kamu cek?', opts:['Bahwa pelajaran tersebut punya presentasi terlampir','Bahwa ID kursusnya sama dengan kursus yang diikuti siswamu','Bahwa panduannya diperbarui bulan ini'], correct:1, fb:'Kursus-kursus yang mirip ada berdampingan di BO. Mengajar dari ID kursus yang salah adalah salah satu cara tercepat menuju pelajaran yang kacau.'},
    {type:'choice', prompt:'Mengapa memahami tujuan pelajaran lebih berguna daripada sekadar tahu langkah-langkahnya?', opts:['Kamu bisa menyesuaikan jalannya jika ada yang berjalan berbeda, tanpa kehilangan intinya','Kamu bisa melewatkan bagian panduan yang menurutmu kurang berguna','Membantumu menyelesaikan pelajaran lebih cepat'], correct:0, fb:'Memahami “mengapa” membuatmu bisa menyesuaikan “bagaimana” tanpa kehilangan tujuan pelajarannya.'}
   ]
@@ -198,13 +198,13 @@ const CONTENT = {
      {ic:'🔄', html:`<strong>Fleksibilitas kognitif.</strong> Menyesuaikan penjelasan, tempo, atau pendekatanmu saat yang pertama tidak berhasil, alih-alih mengulanginya dengan suara lebih keras.`},
      {ic:'🧑‍🤝‍🧑', html:`<strong>Mengenal siswamu.</strong> Minat mereka, apa yang memotivasi mereka — inilah yang membuat contoh mudah dipahami dan mengubah pelajaran yang umum menjadi pelajaran yang terasa personal.`},
      {ic:'🛡️', html:`<strong>Lingkungan yang aman untuk berbuat salah.</strong> Siswa berani mengambil risiko dan benar-benar belajar saat mereka tahu jawaban yang salah tidak akan dihakimi.`},
-     {ic:'🔥', html:`<strong>Semangat yang terlihat.</strong> Jika mereka melihat minat yang tulus darimu, mereka lebih termotivasi untuk terlibat — ini tidak bisa dipalsukan, tapi akan terasa saat tidak ada.`}
+     {ic:'🔥', html:`<strong>Semangat yang terlihat.</strong> Jika mereka melihat minat yang tulus darimu, mereka lebih termotivasi untuk terlibat — semangat seperti ini tidak bisa dibuat-buat, dan siswa akan langsung merasakannya jika tidak ada.`}
    ])}
   `},
   {t:'💬 Umpan balik yang membangun, bukan yang umum', html:`
    <div class="card"><p>“Bagus” tidak memberi tahu siswa apa yang perlu diulang atau dikembangkan. Umpan balik yang membangun itu <strong>spesifik</strong>, dan menunjukkan arah: apa yang sudah berhasil, dan apa yang perlu diperbaiki atau dijelajahi berikutnya.</p></div>
    ${doavoid(
-     ['“Kamu berhasil membuat perulangannya jalan sendiri — keren, itu persis logika yang kita butuhkan”', '“Bagian ini sudah kuat; coba terapkan ide yang sama di bagian berikutnya”', '“Aku lihat kamu memperbaiki bug itu sendiri — gimana cara kamu berpikir tadi?”'],
+     ['“Kamu berhasil membuat perulangannya berjalan sendiri — keren, itu persis logika yang kita butuhkan”', '“Bagian ini sudah bagus; coba terapkan ide yang sama di bagian berikutnya”', '“Aku lihat kamu memperbaiki bug itu sendiri — gimana cara kamu berpikir tadi?”'],
      ['“Bagus!” tanpa menyebut apa yang sebenarnya dikerjakan', '“Itu salah” tanpa arahan tentang apa yang bisa dicoba', 'Umpan balik yang bisa berlaku sama untuk hasil kerja siswa mana pun']
    )}
   `},

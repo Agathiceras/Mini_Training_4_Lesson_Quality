@@ -43,7 +43,7 @@ const CONTENT = {
     doneEyebrow:'Miniszkolenie ukończone',
     doneTitle:'🎉 Gratulacje!',
     doneP1:"🎉 <strong>Gratulacje! Udało ci się ukończyć to miniszkolenie.</strong>",
-    doneP2:"To już wszystko! Wróć na stronę szkolenia w LMS, z której trafiasz do tego miniszkolenia, aby zamknąć zadanie.",
+    doneP2:"To już wszystko! Wróć na stronę szkolenia w LMS, która przekierowała cię do tego miniszkolenia, aby zamknąć zadanie.",
     doneP3:"👉 <strong>Jeśli bezpośrednio pod szkoleniem w LMS widnieje sprawdzian lub test, rozwiąż go i uzyskaj wynik zaliczający</strong> — w przeciwnym razie zadanie może pozostać nieukończone.",
     doneP4:'Powodzenia! ❤️',
     doneP5:'',
@@ -51,7 +51,7 @@ const CONTENT = {
     devOn:'🔓 Tryb deweloperski WŁ. — wszystkie moduły odblokowane',
     devOff:'🔒 Tryb deweloperski WYŁ. — postęp wyczyszczony',
     devBadge:'🔓 TRYB DEWELOPERSKI',
-    doLabel:'✅ Rób tak',
+    doLabel:'✅ Używaj zwrotów',
     avoidLabel:'🚫 Unikaj',
     noticeLabel:'Zwróć uwagę:',
     cvSee:'Co widzisz:',
@@ -67,47 +67,47 @@ const CONTENT = {
     return [
 {id:'intro', numLabel:'Wprowadzenie', emoji:'🧩', color:'var(--coral)',
  title:'Dlaczego tu jesteś',
- desc:'Dlaczego ten powód zasługuje na szczerą, konkretną samoocenę — i jakie zasady obowiązują, gdy wniosek o zwrot już wpłynął.',
- obj:'Zrozum, że ten powód dotyczy samej lekcji, dlaczego wczesne proszenie o pomoc to właściwy ruch, i co dokładnie robić (a czego nie robić), gdy wniosek o zwrot już istnieje.',
+ desc:'Dlaczego ten problem zasługuje na szczerą, konkretną samoocenę — i jakie zasady obowiązują, gdy wniosek o zwrot już się pojawił.',
+ obj:'Zrozumieć, że ten problem dotyczy samej lekcji, dlaczego wczesne proszenie o pomoc to właściwy ruch, a także dowiedzieć się co dokładnie robić (a czego nie robić), gdy wniosek o zwrot już się pojawił.',
  sections:[
   {t:'🪞 Ten powód najtrudniej usłyszeć', html:`
    <div class="card"><p>Ten powód oznacza, że rodzina uznała za problem <strong>samą jakość lekcji</strong> — nie dziecko, nie poziom, nie harmonogram. Trudniej to usłyszeć niż większość pozostałych powodów i łatwo wpaść w defensywę albo szukać wytłumaczeń.</p></div>
-   ${co('co-idea','💡',`<p><strong>To nie jest werdykt na twój temat jako osoby.</strong> To sygnał dotyczący konkretnych, możliwych do naprawienia zachowań na konkretnych lekcjach. Nauczyciele, którzy traktują go poważnie i rzeczowo — a nie osobiście — najszybciej odwracają sytuację.</p>`)}
+   ${co('co-idea','💡',`<p><strong>To nie jest werdykt na twój temat jako osoby.</strong> To sygnał dotyczący konkretnych, możliwych do naprawienia zachowań na konkretnych lekcjach. Nauczyciele, którzy traktują go poważnie i rzeczowo, a nie osobiście, najszybciej poprawiają sytuację.</p>`)}
    ${co('co-star','🎓',`<p><strong>Wcześnie poproś kogoś z zewnątrz o spojrzenie na twoje nauczanie.</strong> Twój mentor regionalny jest właśnie po to — prośba o informację zwrotną na temat tego, jak uczysz, to właściwy ruch, a nie znak, że coś jest z tobą nie tak.</p>`)}
   `},
   {t:'🛟 Jeśli wniosek o zwrot już wpłynął', html:`
-   <div class="card"><p>Wszystko powyżej dotyczy wczesnego wychwytywania problemu. Możliwe jednak, że otwierasz to szkolenie, bo rodzina <strong>już</strong> poprosiła o zwrot pieniędzy. Poniższe zasady obowiązują bez względu na powód — przeczytaj je najpierw, a potem wykorzystaj resztę szkolenia, aby zrozumieć, co do tego doprowadziło i co wciąż możesz zrobić na lekcji.</p></div>
+   <div class="card"><p>Wszystko powyżej dotyczy wczesnego wychwytywania problemu. Możliwe jednak, że otwierasz to szkolenie, bo rodzina <strong>już</strong> poprosiła o zwrot pieniędzy. Zasady, które znajdziesz poniżej, obowiązują bez względu na okoliczności — zacznij od ich przeczytania, a potem wykorzystaj resztę szkolenia, aby zrozumieć, co do tego doprowadziło i co wciąż możesz zrobić na swoich lekcjach.</p></div>
    ${co('co-idea','💡',`<p><strong>Sam wniosek tworzy Dział Obsługi Klienta, nie ty</strong> — na tę część nie masz wpływu. Do ciebie wciąż należy wszystko, co od teraz dzieje się na lekcji, a to naprawdę sporo.</p>`)}
-   ${co('co-danger','🤐',`<p><strong>Nie mów nic o samym wniosku</strong> — ani dziecku, ani rodzinie — chyba że Dział Obsługi Klienta wyraźnie poprosi cię o przekazanie czegoś konkretnego. Twoim zadaniem jest teraz lekcja, a nie ta rozmowa.</p>`)}
+   ${co('co-danger','🤐',`<p><strong>Nie mów nic o samym wniosku</strong> — ani dziecku, ani rodzinie — chyba że Dział Obsługi Klienta wyraźnie poprosi cię o przekazanie czegoś konkretnego. Twoim zadaniem jest teraz dostosowanie lekcji, a nie rozmowa z klientami.</p>`)}
   `},
-  {t:'🎯 Następna lekcja to twoja szansa na ratunek', html:`
+  {t:'🎯 Następna lekcja to twoja szansa na pomoc dziecku', html:`
    <div class="card"><p>Możesz nie mieć okazji, by zmienić cokolwiek innego. Potraktuj najbliższą lekcję z tym dzieckiem jako moment, który o wszystkim zdecyduje.</p></div>
    ${iconGrid([
-     {ic:'🙋', html:`<strong>Daj dziecku prawdziwą okazję do działania.</strong> Nie pytanie dla zasady — tylko autentyczny moment, w którym zostaje zauważone i odnosi sukces.`},
+     {ic:'🙋', html:`<strong>Daj dziecku prawdziwą okazję do działania.</strong> Nie pytanie dla zasady — stwórz autentyczny moment, w którym zostaje zauważone i odnosi sukces.`},
      {ic:'🏆', html:`<strong>Zaplanuj wczesny, widoczny sukces.</strong> Dziecko powinno wyjść z lekcji z poczuciem, że daje radę, a nie że zostaje w tyle.`},
-     {ic:'👀', html:`<strong>Konkretna uwaga</strong> — niech dziecko poczuje, że zauważasz coś konkretnego, a nie chwalisz ogólnikowo.`},
+     {ic:'👀', html:`<strong>Konkretna uwaga</strong> — niech dziecko poczuje, że widzisz, w jego pracy, coś konkretnego, a nie tylko chwalisz ogólnikowo.`},
      {ic:'🤐', html:`<strong>Ani słowa o wniosku</strong> — nawet jeśli dziecko samo o nim wspomni, ciepło zmień temat i ucz dalej.`}
    ])}
   `},
   {t:'📮 Zgłaszaj szybko i znaj jedno bezpieczne zdanie', html:`
-   <div class="card"><p>O tym, że wniosek istnieje, możesz dowiedzieć się z komentarzy Działu Obsługi Klienta w profilu dziecka w BO — nie ma automatycznego systemu, który by cię o tym powiadomił. Gdy już wiesz, to, co widzisz na swoich lekcjach, jest informacją, której Dział Obsługi Klienta nie zdobędzie w żaden inny sposób.</p></div>
+   <div class="card"><p>O tym, że wniosek istnieje, możesz dowiedzieć się z komentarzy Działu Obsługi Klienta w profilu dziecka w BO — nie ma automatycznego systemu, który by cię o tym powiadomił. Gdy dowiesz się o sytuacji, pamiętaj, że to, co widzisz na swoich lekcjach, jest dla Działu Obsługi Klienta bardzo ważną informacją, której nie mogą zdobyć w żaden inny sposób.</p></div>
    ${numlist([
-     'Tego samego dnia zostaw komentarz w BO z dokładnym opisem tego, co widzisz — daty i konkrety, a nie wrażenia',
+     'Tego samego dnia zostaw komentarz w BO z dokładnym opisem swoich obserwacji. Umieść tam daty i konkrety, a nie wrażenia',
      'Jeśli je znasz, zacytuj dosłownie słowa rodziny',
      'Tego samego dnia poinformuj swojego lidera zespołu',
      'Nigdy nie potwierdzaj, że zwrot został zatwierdzony, i nie rozmawiaj o żadnych kwotach'
    ])}
-   ${co('co-ok','✅',`<p><strong>Zdanie, które zawsze jest bezpieczne:</strong> <em>„Dział Obsługi Klienta pomoże w tej sprawie.”</em> Na tym kończy się twoja część rozmowy — dalej przejmuje ją Dział Obsługi Klienta.</p>`)}
+   ${co('co-ok','✅',`<p><strong>Zdanie, które zawsze możesz powiedzieć:</strong> <em>„Dział Obsługi Klienta zajmuje się tą sprawą”.</em> Na tym kończy się twoja część rozmowy — dalej przejmuje ją Dział Obsługi Klienta.</p>`)}
   `},
   {t:'🌱 Nie odpuszczaj później', html:`
-   <div class="card"><p>Niezależnie od tego, czy wniosek zostanie wycofany, dziecko zostanie w twojej grupie, czy przejdzie do innego nauczyciela lub formatu — przez kilka kolejnych lekcji poświęcaj mu szczególną uwagę. Ratunek, który trzyma się przez jedną lekcję, a potem wszystko po cichu wraca do normy, często w ogóle się nie udaje.</p></div>
+   <div class="card"><p>Niezależnie od tego, czy wniosek zostanie wycofany, dziecko zostanie w twojej grupie, czy przejdzie do innego nauczyciela lub formatu — przez kilka kolejnych lekcji poświęcaj mu szczególną uwagę. Pomoc, która jest oferowana przez jedną lekcję, a potem wszystko po cichu wraca do normy, często w ogóle nie daje skutku.</p></div>
   `}
  ]
 },
 {id:'structure', numLabel:'Moduł 1', emoji:'🧭', color:'var(--coral)',
  title:'Struktura lekcji',
- desc:'Dziewięcioetapowa struktura lustrzana, dzięki której lekcja wydaje się kompletna, z przykładami z prawdziwych zajęć, oraz jak czytać własne oceny jakości.',
- obj:'Zrozum, dlaczego spójna struktura lekcji to jedna z najsilniejszych dźwigni jakości, poznaj dziewięć etapów i dowiedz się, jak czytać oceny jakości, żeby zobaczyć dokładnie, w którym miejscu tracisz uwagę klasy.',
+ desc:'Dziewięcioetapowa struktura lekcji, dzięki której zajęcia wydają się kompletne, z przykładami z prawdziwych zajęć, a także o tym, jak czytać własne oceny jakości.',
+ obj:'Zrozumieć, dlaczego spójna struktura lekcji to jedna z najsilniejszych dźwigni jakości, poznać dziewięć etapów i dowiedzieć się, jak czytać oceny jakości, żeby zobaczyć dokładnie, w którym miejscu tracisz uwagę klasy.',
  sections:[
   {t:'🧭 Chodzi o konsekwencję', html:`
    <div class="card"><p>Gdy uczeń pozna twój rytm, przestaje tracić energię na zastanawianie się, „co teraz będzie?”, i zamiast tego wkłada ją w naukę. Stosuj tę samą strukturę za każdym razem, aż stanie się drugą naturą — dla ciebie i dla uczniów.</p></div>
@@ -139,20 +139,20 @@ const CONTENT = {
  ],
  ix:{
   title:'Struktura lekcji — sprawdzian modułu',
-  instr:'Pięć szybkich rund: umieść każdy etap w lekcji i odgadnij, który etap jest opisany. 70%, aby odblokować kolejny moduł.',
+  instr:'Pięć szybkich rund: sklasyfikuj każdy etap w lekcji i wskaż, który etap jest opisany. 70%, aby odblokować kolejny moduł.',
   items:[
-   {type:'sort', prompt:'Gdzie należy ten etap?', card:'▶️ Zapowiedź następnej lekcji', zones:[{label:'🌅 Jeden z 4 etapów otwierających', fb:'Nie do końca — zapowiedź następnej lekcji należy do lustrzanego bloku zamykającego, a nie otwierającego.'},{label:'🏁 Jeden z 4 etapów zamykających', fb:'Zgadza się — to trzeci z czterech etapów zamykających, tuż przed zakończeniem.'}], correctZone:1},
+   {type:'sort', prompt:'Gdzie należy ten etap?', card:'▶️ Zapowiedź następnej lekcji', zones:[{label:'🌅 Jeden z 4 etapów otwierających', fb:'Nie do końca — zapowiedź następnej lekcji należy do bloku zamykającego, a nie otwierającego.'},{label:'🏁 Jeden z 4 etapów zamykających', fb:'Zgadza się — to trzeci z czterech etapów zamykających, tuż przed zakończeniem.'}], correctZone:1},
    {type:'sort', prompt:'Który etap jest opisany?', card:'„Ten moment mówi uczniowi, po co jest dzisiejsza lekcja. Bez niego uczeń nie wie, do czego zmierza — i szybko się wyłącza.”', zones:[{label:'👋 Rozgrzewka', fb:'Nie do końca — rozgrzewka wprowadza w tryb lekcji, ale nie mówi, po co jest dzisiejsza lekcja. To cel lekcji.'},{label:'🎯 Cel lekcji', fb:'Zgadza się — jasne przedstawienie celu lekcji nadaje całej lekcji kierunek, za którym uczniowie mogą podążać.'},{label:'📋 Podsumowanie lekcji', fb:'Nie do końca — podsumowanie spogląda wstecz na to, co zostało omówione. Informacja, po co jest dzisiejsza lekcja, pojawia się na początku: to cel lekcji.'},{label:'✨ Zakończenie', fb:'Nie do końca — zakończenie zamyka lekcję. Informacja, po co jest dzisiejsza lekcja, pojawia się na początku: to cel lekcji.'}], correctZone:1},
    {type:'sort', prompt:'Gdzie należy ten etap?', card:'📖 Powtórzenie poprzedniej lekcji', zones:[{label:'🌅 Jeden z 4 etapów otwierających', fb:'Zgadza się — to drugi z czterech etapów otwierających, tuż po rozgrzewce.'},{label:'🏁 Jeden z 4 etapów zamykających', fb:'Nie do końca — powtórzenie poprzedniej lekcji otwiera lekcję, a nie ją zamyka.'}], correctZone:0},
    {type:'sort', prompt:'Który etap jest opisany?', card:'„Gdy uczeń ujmie własnymi słowami to, czego nauczył się dzisiaj, widać, co naprawdę zostało zrozumiane — i co trzeba utrwalić następnym razem.”', zones:[{label:'📖 Powtórzenie poprzedniej lekcji', fb:'Blisko — ale ten etap wraca do <em>poprzedniej</em> lekcji. Ujęcie <em>dzisiejszej</em> nauki własnymi słowami to podsumowanie lekcji.'},{label:'📋 Sprawdzenie pracy domowej', fb:'Nie do końca — ten etap dotyczy pracy domowej. To podsumowanie lekcji.'},{label:'▶️ Zapowiedź następnej lekcji', fb:'Nie do końca — zapowiedź patrzy w przyszłość. Ujęcie dzisiejszej lekcji własnymi słowami to podsumowanie lekcji.'},{label:'📋 Podsumowanie lekcji', fb:'Zgadza się — podsumowanie lekcji pozwala sprawdzić, co naprawdę zostało zrozumiane, słowami samego ucznia.'}], correctZone:3},
-   {type:'sort', prompt:'Który etap jest opisany?', card:'„Ostatnie 30 sekund to właśnie to, co uczeń bierze pod uwagę, decydując, czy przyjść następnym razem — więc zakończ, świętując to, co stworzył.”', zones:[{label:'✨ Zakończenie', fb:'Zgadza się — zakończenie kończy lekcję z przytupem, a to uczucie sprawia, że uczeń wraca.'},{label:'📖 Zadanie pracy domowej', fb:'Nie do końca — zadanie pracy domowej dotyczy jasnych instrukcji. Zakończenie z przytupem to zakończenie.'},{label:'🎯 Cel lekcji', fb:'Nie do końca — cel lekcji pojawia się na początku. To zakończenie.'},{label:'👋 Rozgrzewka', fb:'Nie do końca — rozgrzewka otwiera lekcję. Ostatnie 30 sekund należą do zakończenia.'}], correctZone:0}
+   {type:'sort', prompt:'Który etap jest opisany?', card:'„Ostatnie 30 sekund to właśnie to, co uczeń bierze pod uwagę, decydując, czy przyjść następnym razem — więc zakończ, świętując to, co stworzył.”', zones:[{label:'✨ Zakończenie', fb:'Zgadza się — zakończenie kończy lekcję z przytupem, a to uczucie sprawia, że uczeń wraca.'},{label:'📖 Zadanie pracy domowej', fb:'Nie do końca — zadanie pracy domowej dotyczy jasnych instrukcji. Powyższy tekst omawia zakończenie z przytupem.'},{label:'🎯 Cel lekcji', fb:'Nie do końca — cel lekcji pojawia się na początku. To zakończenie.'},{label:'👋 Rozgrzewka', fb:'Nie do końca — rozgrzewka otwiera lekcję. Ostatnie 30 sekund należą do zakończenia.'}], correctZone:0}
   ]
  }
 },
 {id:'prep', numLabel:'Moduł 2', emoji:'📚', color:'var(--coral)',
  title:'Czas na przygotowanie',
  desc:'Dlaczego to przestudiowanie przewodnika lekcji dzień wcześniej, a nie trzydzieści minut przed zajęciami, naprawdę chroni jakość lekcji — i gdzie znaleźć go w BO.',
- obj:'Przygotuj się do lekcji z wyprzedzeniem wystarczającym, by wychwycić luki przed jej rozpoczęciem, znajdź właściwe materiały w BackOffice i wiedz dokładnie, gdzie szukać pomocy lub zgłosić problem z treścią.',
+ obj:'Nauczyć się przygotowywania się do lekcji z wyprzedzeniem wystarczającym, by wychwycić luki przed jej rozpoczęciem, dowiedzieć się gdzue znajdują się właściwe materiały w BackOffice i dowiedzieć się, gdzie szukać pomocy lub jak zgłosić problem z treścią.',
  sections:[
   {t:'⏳ Nie trzydzieści minut przed', html:`
    <div class="card"><p>Przygotowanie pół godziny — albo dziesięć minut — przed zajęciami nie zostawia miejsca na faktyczne nauczenie się czegoś, czego jeszcze nie wiesz. Jeśli jest pojęcie, fragment kodu lub narzędzie, w którym nie czujesz się pewnie, będziesz się go uczyć na żywo, przy uczniu.</p></div>
@@ -190,7 +190,7 @@ const CONTENT = {
 {id:'soft', numLabel:'Moduł 3', emoji:'🤝', color:'var(--coral)',
  title:'Umiejętności miękkie',
  desc:'Nawyki wykraczające poza znajomość przedmiotu, dzięki którym na lekcji naprawdę dobrze się przebywa.',
- obj:'Stosuj umiejętności miękkie, które zamieniają wiedzę przedmiotową w naprawdę dobrą lekcję: elastyczność poznawczą, znajomość uczniów, bezpieczeństwo popełniania błędów, motywację i konkretną informację zwrotną.',
+ obj:'Nauczyć się stosowania umiejętności miękkich, które zamieniają wiedzę przedmiotową w naprawdę dobrą lekcję: elastyczność poznawczą, znajomość uczniów, bezpieczeństwo popełniania błędów, motywację i podawanie konkretnych informacji zwrotnych.',
  sections:[
   {t:'🤝 Nie chodzi tylko o znajomość materiału', html:`
    <div class="card"><p>Opanowanie przedmiotu jest konieczne, ale to nie ono sprawia, że na lekcji dobrze się przebywa. To zasługa zestawu nawyków, które nie mają nic wspólnego z wiedzą techniczną.</p></div>
@@ -201,7 +201,7 @@ const CONTENT = {
      {ic:'🔥', html:`<strong>Widoczna pasja.</strong> Jeśli widzą u ciebie prawdziwe zainteresowanie, są bardziej zmotywowani do zaangażowania — tego nie da się udawać, ale łatwo zauważyć, gdy tego brakuje.`}
    ])}
   `},
-  {t:'💬 Informacja zwrotna konstruktywna, a nie ogólnikowa', html:`
+  {t:'💬 Konstruktywna informacja zwrotna, zamiast ogólnikowej', html:`
    <div class="card"><p>„Dobra robota” nie mówi uczniowi niczego, co mógłby powtórzyć lub rozwinąć. Konstruktywna informacja zwrotna jest <strong>konkretna</strong> i wskazuje kierunek: co działa, a co poprawić lub zbadać dalej.</p></div>
    ${doavoid(
      ['„Udało ci się samodzielnie uruchomić pętlę — świetnie, to dokładnie ta logika, której potrzebowaliśmy”', '„Ta część jest mocna; spróbuj zastosować ten sam pomysł w następnej sekcji”', '„Widzę, że udało ci się samodzielnie naprawić ten błąd — jaki był twój tok myślenia?”'],
@@ -217,7 +217,7 @@ const CONTENT = {
   title:'Umiejętności miękkie — sprawdzian modułu',
   instr:'70%, aby odblokować końcową listę kontrolną.',
   items:[
-   {type:'choice', prompt:'Uczeń nie rozumie twojego pierwszego wyjaśnienia. Jak wygląda tu elastyczność poznawcza?', opts:['Powtórzenie tego samego wyjaśnienia wolniej','Przejście dalej i powrót do tematu pod koniec lekcji','Zmiana podejścia — inne ujęcie, demonstracja, mniejsza porcja'], correct:2, fb:'Elastyczność oznacza zmianę podejścia, a nie tylko powtarzanie.'},
+   {type:'choice', prompt:'Uczeń nie rozumie twojego pierwszego wyjaśnienia. W jaki sposób wygląda zastosowanie elastyczności poznawczej w tej sytuacji?', opts:['Powtórzenie tego samego wyjaśnienia wolniej','Przejście dalej i powrót do tematu pod koniec lekcji','Zmiana podejścia — inne ujęcie, demonstracja, mniejsza porcja'], correct:2, fb:'Elastyczność oznacza zmianę podejścia, a nie tylko powtarzanie.'},
    {type:'sort', prompt:'Skarb czy śmieć? Czy to konstruktywna informacja zwrotna?', card:'„Udało ci się samodzielnie uruchomić pętlę — spróbuj zastosować ten sam pomysł w następnej sekcji.”', zones:[{label:'💎 Skarb — konstruktywna', fb:'Zgadza się — konkretnie mówi, co zadziałało, i wskazuje następny krok.'},{label:'🗑️ Śmieć — ogólnikowa', fb:'Nie do końca — ta informacja dokładnie nazywa, co uczeń zrobił i czego spróbować dalej. To jest konstruktywne.'}], correctZone:0},
    {type:'sort', prompt:'Skarb czy śmieć? Czy to konstruktywna informacja zwrotna?', card:'„Dobra robota dzisiaj, wszyscy!”', zones:[{label:'💎 Skarb — konstruktywna', fb:'Nie do końca — jest przyjazna, ale nikomu nie mówi, co powtórzyć lub rozwinąć.'},{label:'🗑️ Śmieć — ogólnikowa', fb:'Zgadza się — przyjazna, ale pasowałaby do każdego. Nazwij, co faktycznie zostało zrobione dobrze.'}], correctZone:1},
    {type:'choice', prompt:'Dlaczego warto pisać do rodzica o czymś dobrym, a nie tylko o problemach?', opts:['Rodzice oczekują tego jako formalności','Zmienia to sposób, w jaki rodzina odbiera wszystko, co wysyłasz później','Jest to potrzebne tylko wtedy, gdy uczeń ma słabe oceny'], correct:1, fb:'Pozytywne wiadomości wysyłane z własnej inicjatywy budują zaufanie, dzięki któremu trudniejsze rozmowy są później łatwiejsze.'}
@@ -226,13 +226,13 @@ const CONTENT = {
 },
 {id:'checklist', numLabel:'Lista kontrolna', emoji:'✅', color:'var(--coral)',
  title:'Końcowa lista kontrolna',
- desc:'Tu nie ma quizu — tylko najważniejsze punkty tego miniszkolenia, zanim je zamkniesz.',
- obj:'Przejrzyj poniższą listę kontrolną. Ten moduł nie jest oceniany — przeczytaj go, a potem ukończ miniszkolenie.',
+ desc:'Tu nie ma quizu — tylko najważniejsze punkty tego miniszkolenia, zanim je zakończysz.',
+ obj:'Zapoznać się z poniższą listę kontrolną. Ten moduł nie jest oceniany — należy go przeczytać, a potem ukończyć miniszkolenie.',
  sections:[
   {t:'🛟 Jeśli wniosek o zwrot już wpłynął', html:`
    ${numlist([
      'Tego samego dnia, w którym dowiaduję się o wniosku, zostawiam komentarz w BO i informuję lidera zespołu',
-     'Moja następna lekcja z tym uczniem to prawdziwa próba ratunku — prawdziwa okazja do działania, widoczny sukces, konkretna uwaga, ani słowa o wniosku',
+     'Moja następna lekcja z tym uczniem to prawdziwa próba pomocy — mogę dać uczniowi prawdziwą okazję do działania, pokazać mu jego sukcesy, przekazać konkretną uwagę, jednak ani słowa o wniosku',
      'Nigdy nie potwierdzam zatwierdzenia zwrotu i nie rozmawiam o kwotach — używam jednego bezpiecznego zdania, a resztę zostawiam Działowi Obsługi Klienta'
    ])}
   `},  {t:'🌱 Na każdej lekcji', html:`
@@ -240,7 +240,7 @@ const CONTENT = {
      'Za każdym razem stosuję tę samą strukturę lekcji, żeby uczniowie znali rytm i wkładali energię w naukę',
      'Otwieram lekcję czterema etapami: rozgrzewką, powtórzeniem poprzedniej lekcji słowami ucznia, rzetelnym sprawdzeniem pracy domowej i jasno przedstawionym celem lekcji',
      'Na etapie teorii i praktyki uczę małymi porcjami, najpierw pokazuję na swoim ekranie i chronię czas na praktykę',
-     'Zamykam lekcję etapami lustrzanymi: podsumowaniem lekcji słowami ucznia, jasnymi instrukcjami do pracy domowej, zapowiedzią następnej lekcji i zakończeniem, które docenia to, co uczniowie stworzyli',
+     'Zamykam lekcję etapami, stanowiącymi lustrzane odbicie rozpoczęcia: podsumowaniem lekcji słowami ucznia, jasnymi instrukcjami do pracy domowej, zapowiedzią następnej lekcji i zakończeniem, które docenia to, co uczniowie stworzyli',
      'Czytam swoje oceny jakości etap po etapie i poprawiam ten etap, który się wymyka, już na najbliższej lekcji',
      'Studiuję przewodnik lekcji i materiały dzień wcześniej — nie trzydzieści minut przed — i znam cel lekcji, a nie tylko kroki',
      'Otwieram przewodnik lekcji i prezentację z BO i sprawdzam, czy ID kursu zgadza się z tym, na który są zapisani moi uczniowie',

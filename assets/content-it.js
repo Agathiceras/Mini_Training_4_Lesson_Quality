@@ -83,7 +83,7 @@ const CONTENT = {
   {t:'🎯 La tua prossima lezione è il tentativo di recupero', html:`
    <div class="card"><p>Potresti non avere altre occasioni per cambiare le cose. Considera la prossima lezione con questo bambino come il momento decisivo.</p></div>
    ${iconGrid([
-     {ic:'🙋', html:`<strong>Dagli un vero turno.</strong> Non una domanda tanto per fare: un momento autentico in cui si sente visto e riesce in qualcosa.`},
+     {ic:'🙋', html:`<strong>Dagli un vero turno.</strong> Non una domanda tanto per fare: un momento autentico in cui si senta visto e riesca in qualcosa.`},
      {ic:'🏆', html:`<strong>Prevedi un successo rapido e visibile.</strong> Deve uscire dalla lezione sentendosi capace, non indietro.`},
      {ic:'👀', html:`<strong>Attenzione specifica</strong> — fallo sentire notato per qualcosa di concreto, non lodato in modo generico.`},
      {ic:'🤐', html:`<strong>Nessun accenno alla richiesta</strong> — anche se è il bambino a tirarla fuori, cambia argomento con gentilezza e continua a insegnare.`}
@@ -92,7 +92,7 @@ const CONTENT = {
   {t:'📮 Segnala subito e conosci l’unica frase sicura', html:`
    <div class="card"><p>Puoi scoprire che esiste una richiesta dai commenti del Client Service sul profilo del bambino in BO: non c’è un sistema automatico che ti avvisa. Una volta che lo sai, quello che hai osservato nelle tue lezioni è un’informazione che il Client Service non può ottenere in nessun altro modo.</p></div>
    ${numlist([
-     'Lascia un commento in BO il giorno stesso con esattamente ciò che hai osservato: date e fatti concreti, non impressioni',
+     'Lascia un commento in BO il giorno stesso riportando esattamente ciò che hai osservato: date e fatti concreti, non impressioni',
      'Riporta le parole della famiglia, testuali, se le hai',
      'Coinvolgi il tuo Team Leader il giorno stesso',
      'Non confermare mai che un rimborso è stato approvato e non parlare mai di importi'
@@ -117,7 +117,7 @@ const CONTENT = {
      {ic:'👋', label:'1 · Riscaldamento', items:['Una domanda veloce o una piccola sfida che porta lo studente in “modalità lezione” — e un momento per creare senso di gruppo.'], video:'https://drive.google.com/file/d/1fMWyd6bfCcUauqIIaNldojVuHYg6J9JR/preview'},
      {ic:'📖', label:'2 · Ripasso della lezione precedente', items:['Riprendi brevemente quanto imparato la volta scorsa, con le parole dello studente. Il “questo me lo ricordo” crea una vera fiducia in sé.'], video:'https://drive.google.com/file/d/1J1jijTw8bj8l9yw9aMNXp9zHwxEbkWbY/preview'},
      {ic:'📋', label:'3 · Controllo dei compiti', items:['Rivedete insieme i compiti: individua i fraintendimenti, apprezza l’impegno, fai vedere che il lavoro viene davvero guardato.'], video:'https://drive.google.com/file/d/1H2Awetu6fkoatv2RMonUeBawgK7tsR3e/preview'},
-     {ic:'🎯', label:'4 · Obiettivo della lezione', items:['Di’ chiaramente di cosa si parla oggi. Uno studente che non sa “a cosa serve” la lezione di oggi perde interesse in fretta.'], video:'https://drive.google.com/file/d/1cuqULcb1jxkwV_uepi-dnxFdx3FB41Si/preview'}
+     {ic:'🎯', label:'4 · Obiettivo della lezione', items:['Spiega chiaramente di cosa si parla oggi. Uno studente che non sa “a cosa serve” la lezione di oggi perde interesse in fretta.'], video:'https://drive.google.com/file/d/1cuqULcb1jxkwV_uepi-dnxFdx3FB41Si/preview'}
    ])}
   `},
   {t:'🎨 La parte centrale: teoria e pratica', html:`
@@ -159,7 +159,7 @@ const CONTENT = {
    ${co('co-idea','💡',`<p><strong>Studia il manuale e i materiali il giorno prima.</strong> Così hai il tempo di accorgerti di una lacuna nelle tue conoscenze, di un bug nel materiale o di un’attività che non ti è del tutto chiara — e di fare davvero qualcosa prima della lezione.</p>`)}
   `},
   {t:'🎯 Conosci l’obiettivo, non solo i passaggi', html:`
-   <div class="card"><p>Cerca di capire con chiarezza cosa deve davvero ottenere la lezione di oggi, non solo la sequenza di passaggi del manuale. Se conosci l’obiettivo, puoi adattare il percorso quando qualcosa va diversamente dal previsto, senza perdere il senso della lezione.</p></div>
+   <div class="card"><p>Cerca di capire con chiarezza quale risultato deve davvero raggiungere la lezione di oggi, non solo la sequenza di passaggi del manuale. Se conosci l’obiettivo, puoi adattare il percorso quando qualcosa va diversamente dal previsto, senza perdere il senso della lezione.</p></div>
    <img class="mt-pic" src="Pictures_T4/goals.png" alt="Esempio di pagina del manuale con gli obiettivi della lezione e i risultati di apprendimento">
   `},
   {t:'🆘 Quando trovi una lacuna', html:`
@@ -190,10 +190,10 @@ const CONTENT = {
 {id:'soft', numLabel:'Modulo 3', emoji:'🤝', color:'var(--coral)',
  title:'Soft skill',
  desc:'Le abitudini, oltre alla padronanza della materia, che rendono davvero piacevole stare a lezione.',
- obj:'Applicare le soft skill che trasformano la conoscenza della materia in una lezione davvero buona: flessibilità cognitiva, conoscenza dei tuoi studenti, un ambiente in cui si può sbagliare, motivazione e feedback specifici.',
+ obj:'Applicare le soft skill che trasformano la conoscenza della materia in una lezione davvero buona: flessibilità cognitiva, conoscenza dei tuoi studenti, un ambiente in cui sia permesso sbagliare, motivazione e feedback specifici.',
  sections:[
   {t:'🤝 Non basta conoscere la materia', html:`
-   <div class="card"><p>Padroneggiare la materia è necessario, ma non è ciò che rende piacevole stare a lezione. Quello nasce da un insieme di abitudini che non hanno nulla a che fare con le competenze tecniche.</p></div>
+   <div class="card"><p>Padroneggiare la materia è necessario, ma non è ciò che rende piacevole stare a lezione. Questo nasce da un insieme di abitudini che non hanno nulla a che fare con le competenze tecniche.</p></div>
    ${iconGrid([
      {ic:'🔄', html:`<strong>Flessibilità cognitiva.</strong> Adattare la spiegazione, il ritmo o l’approccio quando il primo tentativo non funziona, invece di ripetere la stessa cosa a voce più alta.`},
      {ic:'🧑‍🤝‍🧑', html:`<strong>Conoscere i tuoi studenti.</strong> I loro interessi, ciò che li motiva: è questo che rende efficaci gli esempi e trasforma una lezione generica in una lezione che sentono propria.`},
@@ -205,7 +205,7 @@ const CONTENT = {
    <div class="card"><p>“Bravo” non dice allo studente nulla da ripetere o su cui costruire. Un feedback costruttivo è <strong>specifico</strong> e indica una direzione: cosa funziona e cosa migliorare o esplorare dopo.</p></div>
    ${doavoid(
      ['“Hai fatto funzionare il ciclo da solo — ottimo, è proprio la logica che ci serviva”', '“Questa parte è solida; prova ad applicare la stessa idea alla sezione successiva”', '“Ho visto che hai corretto quel bug da solo: come ci hai ragionato?”'],
-     ['“Bravo!” senza alcun riferimento a ciò che è stato fatto', '“È sbagliato” senza indicare cosa provare invece', 'Feedback che andrebbero bene allo stesso modo per il lavoro di qualsiasi studente']
+     ['“Bravo!” senza alcun riferimento a ciò che è stato fatto', '“È sbagliato” senza indicare cosa provare invece', 'Feedback che andrebbero ugualmente bene per il lavoro di qualsiasi studente']
    )}
   `},
   {t:'💌 Fatti sentire non solo per le cattive notizie', html:`

@@ -76,7 +76,7 @@ const CONTENT = {
    ${co('co-star','🎓',`<p><strong>Busca pronto una mirada externa sobre tu forma de enseñar.</strong> Tu Mentor Regional está justamente para esto — pedir retroalimentación sobre cómo enseñas es lo correcto, no una señal de que algo vaya mal contigo.</p>`)}
   `},
   {t:'🛟 Si ya existe una solicitud de reembolso', html:`
-   <div class="card"><p>Todo lo anterior trata de detectarlo pronto. Pero puede que estés abriendo este entrenamiento porque una familia <strong>ya</strong> ha pedido un reembolso. Las reglas de abajo se aplican sea cual sea el motivo — léelas primero y usa el resto del entrenamiento para entender qué llevó hasta aquí y qué puedes seguir haciendo en la clase.</p></div>
+   <div class="card"><p>Todo lo anterior trata de detectarlo pronto. Pero puede que estés abriendo este entrenamiento porque una familia <strong>ya</strong> ha pedido un reembolso. Las reglas de abajo se aplican sea cual sea el motivo — léelas primero y usa el resto del entrenamiento para entender qué te llevó hasta aquí y qué puedes seguir haciendo en la clase.</p></div>
    ${co('co-idea','💡',`<p><strong>La solicitud la crea Servicio al Cliente, no tú</strong> — esa parte no está en tus manos. Lo que sigue siendo tuyo es todo lo que sucede en la clase a partir de ahora, y no es poco.</p>`)}
    ${co('co-danger','🤐',`<p><strong>No digas nada sobre la solicitud en sí</strong> — ni al niño ni a la familia — a menos que Servicio al Cliente te pida expresamente decir algo concreto. Tu trabajo ahora es la clase, no la conversación.</p>`)}
   `},

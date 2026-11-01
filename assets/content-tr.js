@@ -11,7 +11,7 @@ const CONTENT = {
     heroIntro:"Bu eğitimi, dersin kalitesiyle ilgili sorunlar nedeniyle iade talep eden öğrencileriniz olduğu için alıyorsunuz. Burada, bir eğitmen olarak neler yapabileceğinizi ve bu tür durumları nasıl yöneteceğinizi göstereceğiz.",
     heroWork:"5 kısa modülü tamamlayın. Bir sonraki modülün kilidini açmak için her modül kontrolünde en az %70 almanız gerekir. Toplam süre yaklaşık 25–30 dakikadır.",
     startBtn:"🚀 Eğitimi Başlat",
-    pathLabel:'Öğrenme yolunuz',
+    pathLabel:'Öğrenme Yolunuz',
     devTitle:'Geliştirici: inceleme için tüm modüllerin kilidini aç',
     backToPath:'Öğrenme yoluna dön',
     modulesPassed:'{done} / {total} modül tamamlandı',

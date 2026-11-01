@@ -9,7 +9,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Minitreinamento",
     heroTitle:"Um olhar honesto sobre a <span class=\"h-pill\">Qualidade da Aula</span>",
     heroIntro:"Você recebeu este treinamento porque tem alunos que pediram reembolso por problemas na qualidade da aula. Aqui, vamos mostrar o que você pode fazer como tutor e como lidar com essas situações.",
-    heroWork:"Complete 5 módulos curtos. Cada verificação de módulo exige 70% ou mais para liberar o próximo. Cerca de 25 a 30 minutos no total.",
+    heroWork:"Complete 4 módulos curtos. Acerte pelo menos 70% em cada verificação para liberar o próximo módulo. Levará cerca de 25 a 35 minutos.",
     startBtn:"🚀 Começar o treinamento",
     pathLabel:'Sua trilha de aprendizagem',
     devTitle:'Dev: desbloquear todos os módulos para revisão',
@@ -35,7 +35,7 @@ const CONTENT = {
     resFailed:'Ainda não foi dessa vez',
     resUnlocked:"Você liberou o próximo módulo.",
     resDone:"Você concluiu este minitreinamento.",
-    resNeed:'Você precisa de 70% para liberar o próximo módulo. Revise a seção acima e tente a verificação de novo.',
+    resNeed:'Você precisa de Acerte 70% do quiz para liberar o próximo módulo. Revise a seção acima e tente a verificação de novo.',
     resContinue:'Continuar para a trilha de aprendizagem',
     resFinish:'Continuar',
     resBack:'Voltar à trilha',
@@ -77,20 +77,20 @@ const CONTENT = {
   `},
   {t:'🛟 Se já existe um pedido de reembolso', html:`
    <div class="card"><p>Tudo o que foi dito acima é sobre identificar isso cedo. Mas talvez você esteja abrindo este treinamento porque uma família <strong>já</strong> pediu reembolso. As regras abaixo valem independentemente do motivo — leia-as primeiro e use o restante deste treinamento para entender o que levou a essa situação e o que ainda dá para fazer na aula.</p></div>
-   ${co('co-idea','💡',`<p><strong>O pedido em si é criado pelo Atendimento ao Cliente, não por você</strong> — essa parte não está nas suas mãos. O que continua sendo seu é tudo o que acontece na aula daqui em diante, e isso não é pouco.</p>`)}
-   ${co('co-danger','🤐',`<p><strong>Não diga nada sobre o pedido em si</strong> — nem para a criança, nem para a família — a menos que o Atendimento ao Cliente peça explicitamente que você diga algo específico. Seu trabalho agora é a aula, não a conversa.</p>`)}
+   ${co('co-idea','💡',`<p><strong>O pedido em si é criado pelo Client Service, não por você</strong> — essa parte não está nas suas mãos. O que continua sendo seu é tudo o que acontece na aula daqui em diante, e isso não é pouco.</p>`)}
+   ${co('co-danger','🤐',`<p><strong>Não diga nada sobre o pedido em si</strong> — nem para a criança, nem para a família — a menos que o Client Service peça explicitamente que você diga algo específico. Seu trabalho agora é a aula, não a conversa.</p>`)}
   `},
   {t:'🎯 Sua próxima aula é a tentativa de reverter', html:`
    <div class="card"><p>Talvez você não tenha chance de mudar mais nada. Trate a próxima aula com essa criança como o momento que decide tudo.</p></div>
    ${iconGrid([
-     {ic:'🙋', html:`<strong>Dê a ela um momento de protagonismo de verdade.</strong> Não uma pergunta sem sentido — um momento genuíno em que ela é vista e tem sucesso.`},
+     {ic:'🙋', html:`<strong>Dê espaço para ela participar de verdade.</strong> Não faça uma pergunta só por fazer. Crie um momento genuíno em que ela se sinta valorizada e tenha a oportunidade de acertar.`},
      {ic:'🏆', html:`<strong>Garanta uma conquista cedo e bem visível.</strong> Ela deve sair da aula se sentindo capaz, não para trás.`},
      {ic:'👀', html:`<strong>Atenção específica</strong> — faça com que ela se sinta notada por algo concreto, não elogiada de forma genérica.`},
      {ic:'🤐', html:`<strong>Nenhuma menção ao pedido</strong> — mesmo que a criança toque no assunto, redirecione com carinho e continue ensinando.`}
    ])}
   `},
   {t:'📮 Avise rápido e conheça a única frase segura', html:`
-   <div class="card"><p>Você pode descobrir que existe um pedido pelos comentários do Atendimento ao Cliente no perfil da criança no BO — não há nenhum sistema automático que avise você. Quando você souber, o que você viu nas suas aulas é uma informação que o Atendimento ao Cliente não tem de nenhuma outra forma.</p></div>
+   <div class="card"><p>Você pode descobrir se há um pedido de reembolso por meio dos comentários do Client Service no perfil do aluno, no BO. Não há nenhum sistema automático que envie esse aviso. Quando ficar sabendo, lembre-se de que as informações que você obteve durante as aulas são algo que o Client Service não tem como conseguir de outra forma.</p></div>
    ${numlist([
      'Deixe um comentário no BO no mesmo dia com exatamente o que você viu — datas e detalhes específicos, não impressões',
      'Inclua as palavras da própria família, literalmente, se você as tiver',
@@ -100,7 +100,7 @@ const CONTENT = {
    ${co('co-ok','✅',`<p><strong>A mensagem que é sempre seguro dizer:</strong> <em>“O Atendimento ao Cliente vai ajudar vocês com isso.”</em> Aí termina a sua parte da conversa — o Atendimento ao Cliente assume a partir daí.</p>`)}
   `},
   {t:'🌱 Mantenha o cuidado depois', html:`
-   <div class="card"><p>Se o pedido for retirado, se a criança continuar no seu grupo ou passar para outro tutor ou formato, continue dedicando atenção extra nas próximas aulas. Uma reversão que se sustenta por uma aula e depois volta discretamente ao normal muitas vezes não se sustenta de forma alguma.</p></div>
+   <div class="card"><p>Independentemente de o pedido de reembolso ser retirado, de a criança continuar no seu grupo ou de passar para outro tutor ou formato, continue dedicando atenção extra às aulas seguintes. Uma mudança positiva que dura apenas uma aula e depois dá lugar à rotina habitual dificilmente se sustenta a longo prazo.</p></div>
   `}
  ]
 },
@@ -124,9 +124,9 @@ const CONTENT = {
    <div class="card"><p>A etapa mais longa, em que o conteúdo novo é ensinado e imediatamente usado. Mantenha a teoria em blocos pequenos — um conceito, depois a prática com ele — e <strong>demonstre primeiro</strong>: mostre na sua tela antes que os alunos tentem na deles. Proteja o tempo de prática com firmeza; uma aula em que as crianças só ficaram olhando você trabalhar é uma aula em que ninguém praticou de verdade.</p></div>
   `},
   {t:'🏁 O final: o espelho', html:`
-   <div class="card"><p>As quatro fases finais ecoam as iniciais na ordem inversa — a aula termina como começou, trazendo sensação de fechamento e de ritmo.</p></div>
+   <div class="card"><p>As quatro fases finais retomam as iniciais em ordem inversa. Assim, a aula termina como começou, criando uma sensação de fechamento e de ritmo.</p></div>
    ${timeline([
-     {ic:'📋', label:'1 · Resumo da aula', items:['Recapitule o que foi visto, mas deixe o aluno resumir também — as palavras dele revelam o que realmente ficou.'], video:'https://drive.google.com/file/d/1jNZGDMnRYh83xGd2NVHrZTdgXLagi2GZ/preview'},
+     {ic:'📋', label:'1 · Resumo da aula', items:['Recapitule o conteúdo da aula, mas também peça ao aluno que faça seu próprio resumo. As palavras dele revelam o que realmente aprendeu.'], video:'https://drive.google.com/file/d/1jNZGDMnRYh83xGd2NVHrZTdgXLagi2GZ/preview'},
      {ic:'📖', label:'2 · Instruções da lição de casa', items:['Instruções claríssimas sobre o que fazer e como. Lição de casa vaga é lição de casa que não será feita.'], video:'https://drive.google.com/file/d/1qOYvENqjiYlwRaFvDb0A7W6JYgWPCjJc/preview'},
      {ic:'▶️', label:'3 · Prévia da próxima aula', items:['Dê um gostinho do que vem a seguir — mantém o aluno envolvido emocionalmente, e não apenas cumprindo uma lista de tarefas.'], video:'https://drive.google.com/file/d/17bE6JdZmDFJ_igrWYhc7fnpD39b-k-2K/preview'},
      {ic:'✨', label:'4 · Encerramento', items:['Termine em alta: celebre o que o aluno criou. Os últimos 30 segundos são o que ele pesa ao decidir se volta na próxima vez.'], video:'https://drive.google.com/file/d/1OTYSh07wSosjgsHFD05YvccD3NY2CgsX/preview'}
@@ -139,7 +139,7 @@ const CONTENT = {
  ],
  ix:{
   title:'Estrutura da aula — verificação do módulo',
-  instr:'Cinco rodadas rápidas: coloque cada fase no lugar certo da aula e adivinhe qual fase está sendo descrita. 70% para liberar o próximo módulo.',
+  instr:'Cinco rodadas rápidas: coloque cada fase no lugar certo da aula e adivinhe qual fase está sendo descrita. Acerte 70% do quiz para liberar o próximo módulo.',
   items:[
    {type:'sort', prompt:'A qual parte da aula pertence esta fase?', card:'▶️ Prévia da próxima aula', zones:[{label:'🌅 Uma das 4 fases iniciais', fb:'Não exatamente — a Prévia da próxima aula faz parte do bloco final espelhado, não do início.'},{label:'🏁 Uma das 4 fases finais', fb:'Correto — é a terceira das quatro fases finais, logo antes do Encerramento.'}], correctZone:1},
    {type:'sort', prompt:'Qual fase está sendo descrita?', card:'“Este momento diz ao aluno para que serve a aula de hoje. Sem ele, o aluno não sabe aonde está querendo chegar — e perde o interesse rapidamente.”', zones:[{label:'👋 Aquecimento', fb:'Não exatamente — o Aquecimento coloca os alunos no modo aula, mas não diz para que serve a aula de hoje. Isso é o Objetivo da aula.'},{label:'🎯 Objetivo da aula', fb:'Correto — dizer com clareza o Objetivo da aula dá a toda a aula uma direção que os alunos conseguem seguir.'},{label:'📋 Resumo da aula', fb:'Não exatamente — o Resumo olha para trás, para o que foi visto. Dizer para que serve a aula de hoje acontece no início: o Objetivo da aula.'},{label:'✨ Encerramento', fb:'Não exatamente — o Encerramento fecha a aula. Saber para que serve a aula de hoje acontece no início: o Objetivo da aula.'}], correctZone:1},
@@ -171,14 +171,14 @@ const CONTENT = {
    ${co('co-star','⭐',`<p>Encontrar uma lacuna no dia anterior e pedir ajuda é exatamente o sistema funcionando como deveria. Encontrá-la ao vivo, na aula, é justamente o que o tempo de preparação existe para evitar.</p>`)}
   `},
   {t:'🗂️ Encontrando o material do seu curso no BO', html:`
-   <div class="card"><p>O manual da aula e a apresentação ficam dentro do BackOffice (BO), anexados ao registro exato do curso a partir do qual você leciona — não em uma página de wiki antiga que pode estar desatualizada. A simulação abaixo mostra, passo a passo, onde encontrá-los e onde relatar caso algo no próprio conteúdo esteja errado.</p></div>
+   <div class="card"><p>O manual da aula e a apresentação ficam no BackOffice (BO), anexados ao registro específico do curso que você está ministrando — e não em uma página antiga da wiki, que pode estar desatualizada. A simulação abaixo mostra, passo a passo, onde encontrá-los e onde relatar eventuais erros no próprio conteúdo.</p></div>
    ${co('co-danger','🚨',`<p><strong>Sempre confira se o ID do curso que você abre é o mesmo em que seus alunos estão matriculados.</strong> Cursos de aparência parecida existem lado a lado no BO — dar aula com o curso errado, mesmo uma versão diferente do mesmo curso, pode transformar uma aula em caos em segundos.</p>`)}
    <div class="sim-embed"><div class="sim-embed-inner"><span class="sim-embed-tag">🖥️ BO — Material do curso &amp; erros de conteúdo</span><iframe src="Simulacion_BO_CourseMaterial.html" title="BO — Material do curso e erros de conteúdo" loading="lazy"></iframe></div></div>
   `}
  ],
  ix:{
   title:'Tempo de preparação — verificação do módulo',
-  instr:'70% para liberar o próximo módulo.',
+  instr:'Acerte 70% do quiz para liberar o próximo módulo.',
   items:[
    {type:'choice', prompt:'Quando você deve estudar o manual e os materiais de uma aula?', opts:['No dia anterior, para haver tempo de corrigir qualquer lacuna que você encontrar','Logo antes da aula, para estar fresco na sua memória','Só quando for uma aula que você nunca deu antes'], correct:0, fb:'No dia anterior você tem tempo de realmente resolver o que encontrar — uma lacuna, um erro, uma atividade que você não entende por completo.'},
    {type:'choice', prompt:'Você encontra no manual um trecho de código que não funciona. O que você faz?', opts:['Pular essa parte da aula e torcer para que ninguém perceba','Resolver ao vivo durante a aula, com os alunos','Perguntar no canal de Slack do seu curso, ao seu mentor ou ao seu Team Leader — e relatar com o ícone 🐞 no BO'], correct:2, fb:'Esses canais existem justamente para que você não precise resolver isso ao vivo e sozinho — e relatar faz com que o problema seja corrigido para todos os grupos depois do seu.'},
@@ -210,12 +210,12 @@ const CONTENT = {
   `},
   {t:'💌 Demonstrando interesse além das más notícias', html:`
    <div class="card"><p>Um responsável que só recebe notícias suas quando algo vai mal passa a associar suas mensagens a problemas. Envie também uma mensagem para celebrar algo bom — não apenas para sinalizar preocupações.</p></div>
-   ${co('co-star','⭐',`<p>Este único hábito — escrever uma vez, espontaneamente, sobre algo que o aluno fez bem — muda a forma como a família lê tudo o que você envia depois.</p>`)}
+   ${co('co-star','⭐',`<p>Este único hábito — enviar uma mensagem uma vez, espontaneamente, sobre algo que o aluno fez bem — muda a forma como a família lê tudo o que você envia depois.</p>`)}
   `}
  ],
  ix:{
   title:'Habilidades interpessoais — verificação do módulo',
-  instr:'70% para liberar o checklist final.',
+  instr:'Acerte 70% do quiz para liberar o checklist final.',
   items:[
    {type:'choice', prompt:'Um aluno não acompanha a sua primeira explicação. Como é a flexibilidade cognitiva nesse caso?', opts:['Repetir a mesma explicação, mais devagar','Seguir em frente e voltar a isso no fim da aula','Mudar a abordagem — outro ângulo, uma demonstração, um bloco menor'], correct:2, fb:'Flexibilidade significa mudar a abordagem, e não só repeti-la.'},
    {type:'sort', prompt:'Tesouro ou lixo? Este é um feedback construtivo?', card:'“Você fez o loop funcionar sozinho — tente aplicar essa mesma ideia na próxima seção.”', zones:[{label:'💎 Tesouro — construtivo', fb:'Correto — é específico sobre o que funcionou e aponta um próximo passo.'},{label:'🗑️ Lixo — genérico', fb:'Não exatamente — este feedback diz exatamente o que o aluno fez e o que tentar a seguir. Isso é construtivo.'}], correctZone:0},
@@ -233,7 +233,7 @@ const CONTENT = {
    ${numlist([
      'Deixei um comentário no BO no mesmo dia em que soube do pedido e avisei meu Team Leader',
      'Minha próxima aula com esse aluno foi uma tentativa real de reverter a situação — um momento de protagonismo de verdade, uma conquista visível, atenção específica, nenhuma menção ao pedido',
-     'Nunca confirmei aprovação nem discuti valores — usei a única frase segura e deixei o resto com o Atendimento ao Cliente'
+     'Nunca confirmei aprovação nem discuti valores. Usei a única frase segura e deixei o resto com o Client Service'
    ])}
   `},  {t:'🌱 Em toda aula', html:`
    ${numlist([
