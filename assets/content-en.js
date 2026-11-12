@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-Training",
     heroTitle:"An Honest Look at <span class=\"h-pill\">Lesson Quality</span>",
     heroIntro:"You have received this training because you have students who have requested a refund due to issues with the quality of the class. Here, we'll show you what you can do as a tutor and how to handle these situations.",
-    heroWork:"Work through 5 short modules. Each module check needs 70%+ to unlock the next. About 25–30 minutes total.",
+    heroWork:"Work through 6 short modules. Each module check needs 70%+ to unlock the next. About 35–40 minutes total.",
     startBtn:"🚀 Start Training",
     pathLabel:'Your learning path',
     devTitle:'Dev: unlock all modules for review',
@@ -202,8 +202,8 @@ const CONTENT = {
 },
 {id:'soft', numLabel:'Module 3', emoji:'🤝', color:'var(--coral)',
  title:'Soft Skills',
- desc:'The habits beyond subject mastery that actually make a lesson feel good to be in.',
- obj:'Apply the soft skills that turn subject knowledge into a genuinely good lesson: cognitive flexibility, knowing your students, safety to make mistakes, motivation, and specific feedback.',
+ desc:'The habits beyond subject mastery that actually make a lesson feel good to be in — including pace, checking understanding, and patience in your words.',
+ obj:'Apply the soft skills that turn subject knowledge into a genuinely good lesson: cognitive flexibility, knowing your students, safety to make mistakes, motivation, a pace that suits the age, checking understanding, patient phrasing, equal attention, and specific feedback.',
  sections:[
   {t:'🤝 It\'s not only about knowing the material', html:`
    <div class="card"><p>Mastering the subject is necessary, but it isn't what makes a lesson feel good to be in. That comes from a set of habits that have nothing to do with technical knowledge.</p></div>
@@ -221,6 +221,56 @@ const CONTENT = {
      ['"Good job!" with no reference to what was actually done', '"That\'s wrong" with no direction on what to try instead', 'Feedback that would apply equally to any student\'s work']
    )}
   `},
+  {t:'🐢 Pace and checking understanding — especially with younger children', html:`
+   <div class="card"><p>A lesson can be correct and still go too fast for the child in front of you. Families describe it as <em>"the tutor moved on without explaining"</em> or <em>"the method was for older children"</em>. The fix is to slow the steps down, use words the child knows, and <strong>check understanding before you move on</strong> — not to ask "any questions?" and continue.</p></div>
+   ${iconGrid([
+     {ic:'1️⃣', html:`<strong>One instruction at a time.</strong> Give a step, wait for it to be done, then the next — don't stack three steps in one sentence.`},
+     {ic:'🖥️', html:`<strong>"Show me."</strong> Ask a student to share their screen: what you see tells you more than "yes, I understood".`},
+     {ic:'🗣️', html:`<strong>"What will you do first?"</strong> Asking them to say the next step back catches confusion before they start.`},
+     {ic:'👍', html:`<strong>Quick signals:</strong> thumbs up, an emoji, or a reaction when a step is done — you see the whole group at a glance.`},
+     {ic:'⏳', html:`<strong>Wait time.</strong> After a question, count to five before you answer it yourself or call on someone else.`},
+     {ic:'📖', html:`<strong>Words they know.</strong> Explain new terms the first time you use them, with an example from their world.`}
+   ])}
+   ${dimTabs([
+     {ic:'🧒', title:'Ages 6–8',
+      intro:'Short steps, lots of showing, very few words.',
+      tips:[
+       {ic:'👀', html:`<strong>Demonstrate every step</strong> on your screen before they try it — and keep each step to one action.`},
+       {ic:'🔤', html:`<strong>Some are still learning to read.</strong> Read instructions aloud, and use icons, colours and pointing instead of long text.`},
+       {ic:'🧸', html:`<strong>Everyday comparisons:</strong> <em>"A loop is like brushing your teeth: you repeat the same move again and again."</em>`},
+       {ic:'🎉', html:`<strong>Check often and celebrate</strong> each small step done.`}
+      ]},
+     {ic:'🧑', title:'Ages 9–11',
+      intro:'They can follow a short sequence — as long as you check it.',
+      tips:[
+       {ic:'📋', html:`<strong>Two or three steps, written in the chat</strong> as a list they can come back to.`},
+       {ic:'🗣️', html:`<strong>Ask them to explain back</strong> what they're going to do before they start.`},
+       {ic:'🔍', html:`<strong>Spot-check screens</strong> after each step — not only at the end.`},
+       {ic:'🧩', html:`<strong>Introduce terms with an example</strong> they recognise, from games or apps they use.`}
+      ]},
+     {ic:'🧑‍🎓', title:'Ages 12+',
+      intro:'More autonomy — but don\'t confuse silence with understanding.',
+      tips:[
+       {ic:'🧠', html:`<strong>Explain the why,</strong> not only the how — older students engage more when they see the logic.`},
+       {ic:'🗳️', html:`<strong>Anonymous checks</strong> (a poll, a reaction) — teenagers rarely say "I didn't understand" in front of peers.`},
+       {ic:'🔒', html:`<strong>Offer a private chat question</strong> as a way to ask without being seen.`},
+       {ic:'🚀', html:`<strong>Faster pace for those who show they've got it,</strong> with an extra challenge — without leaving the others behind.`}
+      ]}
+   ],'✅ That\'s the three age groups.')}
+  `},
+  {t:'🗣️ Patience in words — phrases to avoid, and what to say instead', html:`
+   <div class="card"><p>Students remember how you made them feel more than what you explained. A single impatient sentence can make a child stop asking — and a family read the whole course as <em>"the tutor has no patience"</em>. Tired or rushed, we all reach for these phrases. Know them, and have the replacement ready:</p></div>
+   <div class="tbl-wrap"><table>
+    <tr><th>🚫 Instead of…</th><th>✅ Try…</th></tr>
+    <tr><td><em>"I already explained this."</em></td><td><em>"Let me show it another way."</em></td></tr>
+    <tr><td><em>"This is easy."</em></td><td><em>"This one takes a bit of practice — let's do it together."</em></td></tr>
+    <tr><td><em>"Hurry up, we're all waiting for you."</em></td><td><em>"Take your time. Everyone else, try challenge 2 in the meantime."</em></td></tr>
+    <tr><td><em>"Not now."</em> (to a raised hand)</td><td><em>"I've seen you, Leo — you're next."</em></td></tr>
+    <tr><td><em>"Look, everyone else managed it."</em></td><td><em>"You've already got the first part right. Let's look at the next one."</em></td></tr>
+    <tr><td><em>"That's wrong."</em></td><td><em>"Almost — what happens if you change this line?"</em></td></tr>
+   </table></div>
+   ${co('co-idea','⚖️',`<p><strong>Patience also means fairness.</strong> Spread your attention: rotate turns, call on different students, and check on the slower ones as often as the fast ones. A child who feels the tutor only talks to the "good" students stops trying.</p>`)}
+  `},
   {t:'💌 Showing interest beyond the bad news', html:`
    <div class="card"><p>A parent who only hears from you when something's wrong starts to associate your messages with problems. Send a message to celebrate something good too — not only to flag concerns.</p></div>
    ${co('co-star','⭐',`<p>This one habit — writing once, unprompted, about something the student did well — changes how a family reads everything you send afterward.</p>`)}
@@ -228,12 +278,90 @@ const CONTENT = {
  ],
  ix:{
   title:'Soft Skills — module check',
-  instr:'70% to unlock the final checklist.',
+  instr:'70% to unlock the next module.',
   items:[
    {type:'choice', prompt:'A student doesn\'t follow your first explanation. What does cognitive flexibility look like here?', opts:['Repeating the same explanation, more slowly','Moving on and coming back to it at the end of the lesson','Changing the approach — a different angle, a demonstration, a smaller chunk'], correct:2, fb:'Flexibility means changing the approach, not just repeating it.'},
    {type:'sort', prompt:'Treasure or trash? Is this constructive feedback?', card:'"You got the loop working on your own — try applying that same idea to the next section."', zones:[{label:'💎 Treasure — constructive', fb:'Correct — it\'s specific about what worked and points to a next step.'},{label:'🗑️ Trash — generic', fb:'Not quite — this one names exactly what the student did and what to try next. That\'s constructive.'}], correctZone:0},
    {type:'sort', prompt:'Treasure or trash? Is this constructive feedback?', card:'"Good job today, everyone!"', zones:[{label:'💎 Treasure — constructive', fb:'Not quite — it\'s friendly, but it tells no one what to repeat or build on.'},{label:'🗑️ Trash — generic', fb:'Correct — friendly, but it would apply to anyone. Name what was actually done well.'}], correctZone:1},
-   {type:'choice', prompt:'Why message a parent about something good, not only about problems?', opts:['Parents expect it as a formality','It changes how the family reads everything you send afterward','It\'s only needed when the student\'s grades are low'], correct:1, fb:'Positive, unprompted messages build the trust that makes harder conversations easier later.'}
+   {type:'choice', prompt:'Why message a parent about something good, not only about problems?', opts:['Parents expect it as a formality','It changes how the family reads everything you send afterward','It\'s only needed when the student\'s grades are low'], correct:1, fb:'Positive, unprompted messages build the trust that makes harder conversations easier later.'},
+   {type:'choice', prompt:'You\'ve explained a step to a group of 7-year-olds and ask "Any questions?" Nobody answers. What next?', opts:['Move on — silence means they understood','Check it: "Show me your screen" or "What will you do first?", and demonstrate again for anyone who\'s stuck','Repeat the same explanation faster so there\'s time for the next step'], correct:1, fb:'Silence isn\'t understanding, especially with young children. A quick "show me" catches confusion before you move on.'},
+   {type:'sort', prompt:'Treasure or trash? Is this a patient response?', card:'A student asks the same question for the second time. You say: "I already explained this."', zones:[{label:'💎 Treasure — patient', fb:'Not quite — it tells the student they should have understood, and many children stop asking after hearing it.'},{label:'🗑️ Trash — impatient', fb:'Correct — try "Let me show it another way" instead. A second question means the first explanation didn\'t land.'}], correctZone:1}
+  ]
+ }
+},
+{id:'professional', numLabel:'Module 4', emoji:'🧱', color:'var(--coral)',
+ title:'Reliability and Professional Boundaries',
+ desc:'Starting on time and using the full lesson, what to do when a lesson can\'t happen as planned, taking over a group, and the professional lines that protect students, families and you.',
+ obj:'Start on time and give the full lesson, know who decides when a lesson has to move, take over a group smoothly, and keep the professional boundaries around platforms, contact, attention, camera and privacy.',
+ sections:[
+  {t:'⏰ On time, every time — and the whole lesson', html:`
+   <div class="card"><p>For a family, the lesson is time they paid for and planned their day around. A tutor who starts ten minutes late, takes an unplanned break or finishes early is the first thing they notice — long before they judge the content. Reliability is part of lesson quality.</p></div>
+   ${rclock([
+     {ic:'🧰', when:'15 minutes before', t:'Ready early', d:'Join early, test your connection, camera and microphone, and open the group and the lesson in BO.'},
+     {ic:'🟢', when:'Start time', t:'Start on time', d:'The first minutes are the warm-up — not your setup.'},
+     {ic:'🎯', when:'During', t:'The full lesson', d:'All the planned phases, with no unplanned breaks and no side tasks.'},
+     {ic:'🏁', when:'End time', t:'Finish on time', d:'Never end early. The wrap-up and the preview belong to the lesson.'}
+   ])}
+   ${co('co-danger','🚨',`<p><strong>Running late or can't connect?</strong> Tell your Team Leader straight away — don't let the students wait in silence. A lesson that starts late isn't "made up" by finishing a few minutes early; tell your Team Leader so they can decide what the family is offered.</p>`)}
+  `},
+  {t:'📅 When a lesson can\'t happen as planned', html:`
+   <div class="card"><p>Illness and emergencies happen. What decides whether a family forgives it is <strong>how early they hear and what happens next</strong>. A message thirty minutes before the lesson, or a tutor who simply doesn't show up, is what families describe as <em>"disorganised"</em> — and it's often the moment they ask for a refund.</p></div>
+   ${doavoid(
+     ['Tell your Team Leader <strong>as soon as you know</strong> you can\'t teach a lesson — the earlier they know, the more options they have (a substitute tutor, a new date)','Follow the plan your Team Leader agrees, including the message to the family','Keep the agreed lesson time — every week, the same time','If a lesson was lost, let your Team Leader decide the make-up'],
+     ['Cancelling or moving a lesson on your own — tutors don\'t reschedule lessons','Telling the family at the last minute yourself, without your Team Leader','Promising a make-up lesson or compensation','Teaching at a different time than the one agreed, even "just this once"']
+   )}
+  `},
+  {t:'🤝 Taking over a group', html:`
+   <div class="card"><p>Families notice tutor changes — especially when nobody told them, or when every new tutor starts from zero. If you take over a group, make the change feel like continuity, not a restart.</p></div>
+   ${stepFlow([
+     {ic:'📖', label:'Read the BO comments and the group\'s progress before your first lesson'},
+     {ic:'👋', label:'Introduce yourself to the students and, as agreed with your Team Leader, to the families'},
+     {ic:'🔁', label:'Keep the routines they know: rules, structure, how they share work'},
+     {ic:'💬', label:'Ask the students what they liked about the lessons so far'}
+   ])}
+  `},
+  {t:'🧱 The professional lines', html:`
+   <div class="card"><p>Some situations aren't about teaching skill at all, but they end a family's trust just as fast. Tap each one:</p></div>
+   ${symCards([
+     {ic:'🏷️', title:'Only Kodland, in and around the lesson',
+      do:`Talk about Kodland's courses and tools only. If you see a problem with the platform or a course, report it to your Team Leader.`,
+      avoid:`Promoting another platform, another school or your own private lessons · speaking negatively about the platform or the course in front of students or families.`},
+     {ic:'📵', title:'Contact only through official channels',
+      do:`Talk to families through the channels your region uses for Kodland lessons. Outside the lesson, your contact is with the parent — not privately with the child.`,
+      avoid:`Personal social media or private chats with students · inviting students to play games or meet online after class · sharing your personal contact details.`},
+     {ic:'🎯', title:'Your full attention during the lesson',
+      do:`Silence your phone and close what you don't need. The lesson time belongs to the students.`,
+      avoid:`Messaging other people (including other parents) during the lesson · personal tasks · unplanned breaks.`},
+     {ic:'📷', title:'Camera and privacy',
+      do:`Invite cameras on, kindly, once — and accept the answer. Some students keep the camera off for cultural, religious or personal reasons. Offer the chat, reactions or screen sharing instead.`,
+      say:`<em>"No problem at all — you can take part through the chat or by sharing your screen."</em>`,
+      avoid:`Insisting, or asking for the reason in front of the group · taking screenshots or photos of students · sharing students' images or personal information.`},
+     {ic:'🗨️', title:'Age-appropriate conversation',
+      do:`Keep small talk light and suitable for the age of the group. If a sensitive topic comes up, redirect calmly to the lesson.`,
+      avoid:`Debates about politics or religion, adult topics, or personal problems in front of students.`}
+   ])}
+   ${chatMock({
+     name:'Parent', sub:'online', avatar:'👨', time:'19:40',
+     msgs:[`Hi! My son really likes you. Could you give him private lessons outside Kodland? We'd pay you directly, it would be cheaper for us.`],
+     title:'How do you reply?',
+     text:'The family is happy with you — and asks for something that crosses a professional line. Tap each reply to see what happens.',
+     opts:[
+      {t:`“Sure! Send me your number and we'll organise it.”`, ok:false, fb:`This takes the student outside Kodland and breaks the professional boundaries of your role. Never arrange private lessons with a Kodland family.`},
+      {t:`“Thank you so much, I'm really glad he enjoys our lessons! I can only teach him through Kodland, though. If you'd like more lessons or a different format, Customer Service will help you with the options.”`, ok:true, fb:`Warm, clear and professional. You thank them, hold the line and point them to the people who can offer options. Then tell your Team Leader about the request.`},
+      {t:`“That's not allowed, please don't ask me that again.”`, ok:false, fb:`The line is right, but the tone isn't: the family meant it as a compliment. Decline warmly and redirect them to Customer Service.`}
+     ]
+   })}
+  `}
+ ],
+ ix:{
+  title:'Reliability and boundaries — module check',
+  instr:'Sort each situation and pick the best move. 70% to unlock the final checklist.',
+  items:[
+   {type:'sort', prompt:'Fine, or does it cross the line?', card:'During the lesson, while the students work, you answer a message from another group\'s parent.', zones:[{label:'✅ Fine', fb:'Not quite — the lesson time belongs to these students. Messages to other families wait until after the lesson.'},{label:'🚫 Crosses the line', fb:'Correct — during the lesson your attention stays with the group. Families notice, and it reads as "the tutor wasn\'t paying attention".'}], correctZone:1},
+   {type:'sort', prompt:'Fine, or does it cross the line?', card:'A student keeps her camera off for religious reasons. You let her take part through the chat and screen sharing.', zones:[{label:'✅ Fine', fb:'Correct — invite kindly, accept the answer, and offer other ways to take part. Never insist.'},{label:'🚫 Crosses the line', fb:'Not quite — respecting the student\'s reasons and offering other ways in is exactly right.'}], correctZone:0},
+   {type:'choice', prompt:'You wake up ill and know you can\'t teach this evening\'s lesson. What do you do?', opts:['Message the family 30 minutes before the lesson to cancel it','Tell your Team Leader straight away, so they can arrange a substitute or a new date — and follow their plan for the family','Teach a shorter lesson and end early'], correct:1, fb:'Tutors don\'t cancel or reschedule on their own. The earlier your Team Leader knows, the more options they have — and the family hears it from a plan, not at the last minute.'},
+   {type:'sort', prompt:'Fine, or does it cross the line?', card:'After class, you invite two students to play Roblox together online.', zones:[{label:'✅ Fine', fb:'Not quite — contact with students outside the lesson, especially private play, crosses a professional line, however friendly it feels.'},{label:'🚫 Crosses the line', fb:'Correct — outside the lesson your contact is with the parent, through official channels. No private contact or play with students.'}], correctZone:1},
+   {type:'choice', prompt:'You\'re taking over a group from another tutor. What should you do before your first lesson?', opts:['Start the course again from lesson 1 so you know where everyone is','Nothing special — the students will get used to you','Read the BO comments and the group\'s progress, plan how to introduce yourself, and keep the routines the group already knows'], correct:2, fb:'Continuity is what makes a tutor change feel safe: know the group\'s history, introduce yourself, and keep the routines they know.'}
   ]
  }
 },
@@ -261,7 +389,14 @@ const CONTENT = {
      'When my first explanation doesn\'t land, I change the approach — a different angle, a demonstration, a smaller chunk — instead of repeating it',
      'I get to know my students and build a safe space where mistakes aren\'t judged',
      'I give specific, constructive feedback: what worked, and what to try next — never just "good job"',
-     'I message families about good news too, not only when something goes wrong'
+     'I message families about good news too, not only when something goes wrong',
+     'I give one instruction at a time and check understanding with "show me" or "what will you do first?" — silence isn\'t understanding',
+     'I adapt pace and words to the age: very short, demonstrated steps for the youngest, and new terms explained with examples',
+     'I avoid impatient phrases like "I already explained this" and spread my attention fairly across the group',
+     'I join 15 minutes early, start on time, give the full lesson and never end early',
+     'If I can\'t teach a lesson, I tell my Team Leader as soon as I know — I never cancel, move or promise a make-up on my own',
+     'When I take over a group, I read the BO comments first, introduce myself and keep the routines the group knows',
+     'I keep professional boundaries: only Kodland platforms, contact through official channels, my full attention in the lesson, and respect for each student\'s camera and privacy'
    ])}
   `},  {t:'', html:`
    ${co('co-star','⭐',`<p><strong>That's the whole mini-training.</strong> When you're ready, continue — then complete the DST in the LMS to close out the assignment.</p>`)}
