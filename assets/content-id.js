@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-Training",
     heroTitle:"Melihat <span class=\"h-pill\">Kualitas Pelajaran</span> Secara Jujur",
     heroIntro:"Kamu menerima pelatihan ini karena ada siswamu yang mengajukan refund karena masalah kualitas kelas. Di sini kami akan menunjukkan apa yang bisa kamu lakukan sebagai tutor dan cara menangani situasi seperti ini.",
-    heroWork:"Selesaikan 5 modul singkat. Setiap cek modul butuh nilai 70%+ untuk membuka modul berikutnya. Total sekitar 25–30 menit.",
+    heroWork:"Pelajari 6 modul singkat. Setiap tes modul membutuhkan nilai minimal 70% untuk membuka modul berikutnya. Total waktu pengerjaan sekitar 35–40 menit.",
     startBtn:"🚀 Mulai Pelatihan",
     pathLabel:'Jalur belajarmu',
     devTitle:'Dev: buka semua modul untuk ditinjau',
@@ -202,8 +202,8 @@ const CONTENT = {
 },
 {id:'soft', numLabel:'Modul 3', emoji:'🤝', color:'var(--coral)',
  title:'Soft Skills',
- desc:'Kebiasaan di luar penguasaan materi yang benar-benar membuat sebuah pelajaran terasa menyenangkan untuk diikuti.',
- obj:'Menerapkan soft skills yang mengubah penguasaan materi menjadi pelajaran yang benar-benar bagus: fleksibilitas kognitif, mengenal siswamu, rasa aman untuk berbuat salah, motivasi, dan umpan balik yang spesifik.',
+ desc:'Kebiasaan dan keterampilan di luar penguasaan materi yang membuat suasana belajar menjadi menyenangkan — termasuk mengatur tempo pembelajaran, memastikan pemahaman siswa, dan menggunakan kata-kata dengan sabar.',
+ obj:'Menerapkan soft skills yang mengubah pengetahuan materi menjadi pengalaman belajar yang benar-benar baik: fleksibilitas kognitif, mengenal siswa, menciptakan lingkungan yang aman untuk melakukan kesalahan, motivasi, menyesuaikan tempo dengan usia siswa, memastikan pemahaman, menggunakan ungkapan yang sabar, memberikan perhatian yang merata, dan memberikan umpan balik yang spesifik.',
  sections:[
   {t:'🤝 Bukan hanya soal menguasai materi', html:`
    <div class="card"><p>Menguasai materi itu perlu, tapi bukan itu yang membuat sebuah pelajaran terasa menyenangkan untuk diikuti. Itu datang dari serangkaian kebiasaan yang tidak ada hubungannya dengan pengetahuan teknis.</p></div>
@@ -221,6 +221,56 @@ const CONTENT = {
      ['“Bagus!” tanpa menyebut apa yang sebenarnya dikerjakan', '“Itu salah” tanpa arahan tentang apa yang bisa dicoba', 'Umpan balik yang bisa berlaku sama untuk hasil kerja siswa mana pun']
    )}
   `},
+  {t:'🐢 Tempo pembelajaran dan memastikan pemahaman — terutama untuk anak-anak yang lebih kecil', html:`
+   <div class="card"><p>Sebuah pelajaran bisa saja benar secara materi, tetapi tetap berjalan terlalu cepat bagi anak yang sedang Anda ajar. Orang tua sering menggambarkannya dengan mengatakan, <em>“Tutor melanjutkan materi tanpa menjelaskannya terlebih dahulu”</em> atau <em>“Metode yang digunakan terlalu sulit untuk anak seusianya”</em>. Solusinya adalah memperlambat setiap langkah, menggunakan kata-kata yang mudah dipahami anak, dan <strong>memastikan mereka mengerti sebelum melanjutkan</strong> — bukan sekadar bertanya “Ada pertanyaan?” lalu langsung melanjutkan.</p></div>
+   ${iconGrid([
+     {ic:'1️⃣', html:`<strong>Satu instruksi dalam satu waktu.</strong> Berikan satu langkah, tunggu sampai selesai, lalu berikan langkah berikutnya — jangan menggabungkan tiga instruksi dalam satu kalimat.`},
+     {ic:'🖥️', html:`<strong>“Tunjukkan kepada saya.”</strong> Minta siswa untuk membagikan layar mereka. Apa yang Anda lihat akan memberi lebih banyak informasi daripada sekadar jawaban “Ya, saya mengerti”.`},
+     {ic:'🗣️', html:`<strong>“Apa yang akan kamu lakukan pertama kali?”</strong> Meminta siswa menjelaskan kembali langkah berikutnya dapat membantu mendeteksi kebingungan sebelum mereka mulai mengerjakannya.`},
+     {ic:'👍', html:`<strong>Sinyal cepat:</strong> acungan jempol, emoji, atau reaksi ketika suatu langkah selesai — dengan begitu, Anda dapat melihat perkembangan seluruh kelompok dengan cepat.`},
+     {ic:'⏳', html:`<strong>Waktu untuk berpikir.</strong> Setelah mengajukan pertanyaan, hitung sampai lima sebelum menjawab sendiri atau menunjuk siswa lain.`},
+     {ic:'📖', html:`<strong>Gunakan kata-kata yang mereka pahami.</strong> Jelaskan istilah baru saat pertama kali menggunakannya, dengan contoh yang dekat dengan kehidupan mereka.`}
+   ])}
+   ${dimTabs([
+     {ic:'🧒', title:'Usia 6–8 tahun',
+      intro:'Langkah-langkah singkat, banyak demonstrasi, dan sesedikit mungkin kata-kata.',
+      tips:[
+       {ic:'👀', html:`<strong>Demonstrasikan setiap langkah</strong> melalui layar Anda sebelum siswa mencobanya — dan pastikan setiap langkah hanya berisi satu tindakan.`},
+       {ic:'🔤', html:`<strong>Beberapa siswa masih belajar membaca.</strong> Bacakan instruksi dengan suara keras dan gunakan ikon, warna, serta penunjuk arah daripada teks yang panjang.`},
+       {ic:'🧸', html:`<strong>Gunakan perbandingan sehari-hari:</strong> <em>“Loop itu seperti menyikat gigi: kamu mengulangi gerakan yang sama berkali-kali.”</em>`},
+       {ic:'🎉', html:`<strong>Sering-seringlah memeriksa pemahaman dan berikan apresiasi</strong> untuk setiap langkah kecil yang berhasil diselesaikan.`}
+      ]},
+     {ic:'🧑', title:'Usia 9–11 tahun',
+      intro:'Mereka dapat mengikuti beberapa langkah secara berurutan — selama Anda memastikan mereka memahaminya.',
+      tips:[
+       {ic:'📋', html:`<strong>Berikan dua atau tiga langkah, lalu tuliskan di chat</strong> dalam bentuk daftar agar mereka bisa melihatnya kembali.`},
+       {ic:'🗣️', html:`<strong>Minta mereka menjelaskan kembali</strong> apa yang akan dilakukan sebelum mulai mengerjakan.`},
+       {ic:'🔍', html:`<strong>Periksa layar mereka</strong> setelah setiap langkah — jangan hanya di akhir.`},
+       {ic:'🧩', html:`<strong>Perkenalkan istilah baru dengan contoh</strong> yang mereka kenali, misalnya dari game atau aplikasi yang mereka gunakan.`}
+      ]},
+     {ic:'🧑‍🎓', title:'Usia 12 tahun ke atas',
+      intro:'Berikan lebih banyak kemandirian — tetapi jangan menganggap diam berarti sudah memahami.',
+      tips:[
+       {ic:'🧠', html:`<strong>Jelaskan alasan di balik suatu langkah,</strong> bukan hanya cara melakukannya — siswa yang lebih besar akan lebih tertarik ketika mereka memahami logikanya.`},
+       {ic:'🗳️', html:`<strong>Gunakan pemeriksaan anonim</strong> (polling atau reaksi) — remaja jarang mengatakan “Saya tidak mengerti” di depan teman-temannya.`},
+       {ic:'🔒', html:`<strong>Sediakan pilihan untuk bertanya melalui chat pribadi</strong> agar mereka bisa bertanya tanpa harus terlihat oleh orang lain.`},
+       {ic:'🚀', html:`<strong>Percepat tempo untuk siswa yang sudah menunjukkan pemahaman</strong> dan berikan tantangan tambahan — tanpa meninggalkan siswa lainnya.`}
+      ]}
+   ],'✅ Itulah tiga kelompok usia.')}
+  `},
+  {t:'🗣️ Kesabaran dalam berbicara — ungkapan yang harus dihindari dan alternatif yang lebih baik', html:`
+   <div class="card"><p>Siswa lebih mengingat bagaimana perasaan mereka saat belajar bersama Anda daripada apa yang Anda jelaskan. Satu kalimat yang menunjukkan ketidaksabaran dapat membuat anak berhenti bertanya — dan orang tua bisa menilai keseluruhan kursus sebagai pengalaman di mana <em>“tutornya tidak sabar”</em>. Saat lelah atau terburu-buru, kita semua bisa saja menggunakan ungkapan seperti ini. Kenali ungkapan tersebut dan siapkan alternatif yang lebih baik:</p></div>
+   <div class="tbl-wrap"><table>
+    <tr><th>🚫 Daripada mengatakan…</th><th>✅ Coba katakan…</th></tr>
+    <tr><td><em>“Saya sudah menjelaskan ini.”</em></td><td><em>“Mari saya tunjukkan dengan cara lain.”</em></td></tr>
+    <tr><td><em>“Ini mudah.”</em></td><td><em>“Bagian ini membutuhkan sedikit latihan — mari kita kerjakan bersama.”</em></td></tr>
+    <tr><td><em>“Cepat, kami semua sedang menunggumu.”</em></td><td><em>“Tidak perlu terburu-buru. Sementara itu, yang lain bisa mencoba tantangan 2.”</em></td></tr>
+    <tr><td><em>“Bukan sekarang.”</em> (kepada siswa yang mengangkat tangan)</td><td><em>“Saya melihat kamu, Leo — sebentar lagi giliranmu.”</em></td></tr>
+    <tr><td><em>“Lihat, semua orang sudah bisa melakukannya.”</em></td><td><em>“Bagian pertama sudah kamu kerjakan dengan benar. Mari kita lihat bagian berikutnya.”</em></td></tr>
+    <tr><td><em>“Itu salah.”</em></td><td><em>“Hampir benar — apa yang terjadi jika kamu mengubah baris ini?”</em></td></tr>
+   </table></div>
+   ${co('co-idea','⚖️',`<p><strong>Kesabaran juga berarti bersikap adil.</strong> Bagikan perhatian Anda secara merata: berikan giliran kepada siswa secara bergantian, ajukan pertanyaan kepada siswa yang berbeda, dan periksa perkembangan siswa yang lebih lambat sesering Anda memeriksa siswa yang lebih cepat. Anak yang merasa tutor hanya berbicara dengan siswa yang “pintar” akan berhenti berusaha.</p>`)}
+  `},
   {t:'💌 Tunjukkan kepedulian, bukan hanya saat ada kabar buruk', html:`
    <div class="card"><p>Orang tua yang hanya mendengar kabar darimu saat ada masalah akan mulai mengaitkan pesan-pesanmu dengan masalah. Kirim juga pesan untuk merayakan hal baik — bukan hanya untuk menyampaikan kekhawatiran.</p></div>
    ${co('co-star','⭐',`<p>Satu kebiasaan ini — menulis sekali, tanpa diminta, tentang sesuatu yang dilakukan siswa dengan baik — mengubah cara keluarga membaca semua pesan yang kamu kirim setelahnya.</p>`)}
@@ -228,12 +278,87 @@ const CONTENT = {
  ],
  ix:{
   title:'Soft Skills — cek modul',
-  instr:'70% untuk membuka checklist akhir.',
+  instr:'Diperlukan nilai 70% untuk membuka modul berikutnya.',
   items:[
    {type:'choice', prompt:'Seorang siswa tidak bisa mengikuti penjelasan pertamamu. Seperti apa fleksibilitas kognitif dalam situasi ini?', opts:['Mengulangi penjelasan yang sama, dengan lebih pelan','Melanjutkan dan kembali membahasnya di akhir pelajaran','Mengubah pendekatannya — sudut pandang yang berbeda, peragaan, atau potongan yang lebih kecil'], correct:2, fb:'Fleksibilitas berarti mengubah pendekatannya, bukan sekadar mengulanginya.'},
    {type:'sort', prompt:'Harta karun atau sampah? Apakah ini umpan balik yang membangun?', card:'“Kamu berhasil membuat perulangannya jalan sendiri — coba terapkan ide yang sama di bagian berikutnya.”', zones:[{label:'💎 Harta karun — membangun', fb:'Benar — spesifik tentang apa yang berhasil dan menunjukkan langkah berikutnya.'},{label:'🗑️ Sampah — umum', fb:'Belum tepat — umpan balik ini menyebutkan persis apa yang dilakukan siswa dan apa yang bisa dicoba berikutnya. Itu membangun.'}], correctZone:0},
    {type:'sort', prompt:'Harta karun atau sampah? Apakah ini umpan balik yang membangun?', card:'“Kerja bagus hari ini, semuanya!”', zones:[{label:'💎 Harta karun — membangun', fb:'Belum tepat — memang ramah, tapi tidak memberi tahu siapa pun apa yang perlu diulang atau dikembangkan.'},{label:'🗑️ Sampah — umum', fb:'Benar — ramah, tapi bisa berlaku untuk siapa saja. Sebutkan apa yang sebenarnya sudah dilakukan dengan baik.'}], correctZone:1},
-   {type:'choice', prompt:'Mengapa mengirim pesan kepada orang tua tentang hal yang baik, bukan hanya tentang masalah?', opts:['Orang tua mengharapkannya sebagai formalitas','Ini mengubah cara keluarga membaca semua pesan yang kamu kirim setelahnya','Hanya diperlukan saat nilai siswa rendah'], correct:1, fb:'Pesan positif tanpa diminta membangun kepercayaan yang membuat percakapan sulit menjadi lebih mudah di kemudian hari.'}
+   {type:'choice', prompt:'Mengapa mengirim pesan kepada orang tua tentang hal yang baik, bukan hanya tentang masalah?', opts:['Orang tua mengharapkannya sebagai formalitas','Ini mengubah cara keluarga membaca semua pesan yang kamu kirim setelahnya','Hanya diperlukan saat nilai siswa rendah'], correct:1, fb:'Pesan positif tanpa diminta membangun kepercayaan yang membuat percakapan sulit menjadi lebih mudah di kemudian hari.'},
+   {type:'choice', prompt:'Anda telah menjelaskan suatu langkah kepada sekelompok anak berusia 7 tahun dan bertanya, “Ada pertanyaan?” Tidak ada yang menjawab. Apa yang harus Anda lakukan selanjutnya?', opts:['Lanjutkan ke materi berikutnya — diam berarti mereka sudah mengerti.','Periksa pemahaman mereka: “Coba tunjukkan layar kalian” atau “Apa yang akan kalian lakukan pertama kali?”, lalu demonstrasikan kembali untuk siswa yang masih mengalami kesulitan.','Ulangi penjelasan yang sama dengan lebih cepat agar ada cukup waktu untuk langkah berikutnya.'], correct:1, fb:'Diam bukan berarti memahami, terutama bagi anak-anak yang lebih kecil. Permintaan sederhana seperti “Coba tunjukkan” dapat membantu mendeteksi kebingungan sebelum Anda melanjutkan.'},
+   {type:'sort', prompt:'Harta karun atau sampah? Apakah ini merupakan respons yang sabar?', card:'Seorang siswa menanyakan hal yang sama untuk kedua kalinya. Anda menjawab: “Saya sudah menjelaskan ini.”', zones:[{label:'💎 Harta karun — sabar', fb:'Belum tepat — respons ini membuat siswa merasa bahwa mereka seharusnya sudah memahami penjelasan tersebut. Banyak anak akhirnya berhenti bertanya setelah mendengarnya.'},{label:'🗑️ Sampah — tidak sabar', fb:'Benar — cobalah mengatakan “Mari saya tunjukkan dengan cara lain”. Pertanyaan kedua menunjukkan bahwa penjelasan pertama belum dipahami.'}], correctZone:1}
+  ]
+ }
+},
+{id:'professional', numLabel:'Modul 4', emoji:'🧱', color:'var(--coral)',
+ title:'Keandalan dan Batasan Profesional',
+ desc:'Memulai kelas tepat waktu dan menggunakan seluruh durasi pelajaran, tindakan yang harus dilakukan ketika kelas tidak dapat berlangsung sesuai rencana, mengambil alih kelompok siswa, serta batasan profesional yang melindungi siswa, keluarga, dan diri Anda sendiri.',
+ obj:'Memulai kelas tepat waktu dan memberikan pelajaran secara penuh, memahami siapa yang berwenang memutuskan perubahan jadwal kelas, mengambil alih kelompok dengan lancar, serta menjaga batasan profesional terkait platform, komunikasi, perhatian, kamera, dan privasi.',
+ sections:[
+  {t:'⏰ Selalu tepat waktu — dan berikan pelajaran secara penuh', html:`
+   <div class="card"><p>Bagi keluarga, waktu belajar adalah waktu yang telah mereka bayar dan mereka jadwalkan dalam aktivitas sehari-hari. Tutor yang terlambat sepuluh menit, mengambil jeda yang tidak direncanakan, atau mengakhiri kelas lebih awal akan menjadi hal pertama yang diperhatikan keluarga — jauh sebelum mereka menilai kualitas materi. Keandalan merupakan bagian dari kualitas pembelajaran.</p></div>
+   ${rclock([
+     {ic:'🧰', when:'15 menit sebelumnya', t:'Bersiap lebih awal', d:'Masuk lebih awal, periksa koneksi internet, kamera, dan mikrofon Anda, serta buka grup dan materi pelajaran di BO.'},
+     {ic:'🟢', when:'Waktu mulai', t:'Mulai tepat waktu', d:'Menit-menit pertama merupakan bagian dari kegiatan pemanasan — bukan waktu untuk menyiapkan peralatan Anda.'},
+     {ic:'🎯', when:'Selama kelas', t:'Pelajaran secara penuh', d:'Laksanakan seluruh tahapan pembelajaran yang telah direncanakan, tanpa jeda yang tidak direncanakan dan tanpa mengerjakan hal lain di luar kegiatan mengajar.'},
+     {ic:'🏁', when:'Waktu selesai', t:'Akhiri tepat waktu', d:'Jangan pernah mengakhiri kelas lebih awal. Kegiatan penutup dan pengenalan materi berikutnya juga merupakan bagian dari pelajaran.'}
+   ])}
+   ${co('co-danger','🚨',`<p><strong>Terlambat atau tidak bisa terhubung?</strong> Segera beri tahu Team Leader Anda — jangan biarkan siswa menunggu tanpa informasi. Kelas yang dimulai terlambat tidak bisa “diganti” dengan mengakhirinya beberapa menit lebih awal. Beri tahu Team Leader agar mereka dapat memutuskan solusi atau kompensasi yang akan ditawarkan kepada keluarga.</p>`)}
+  `},
+  {t:'📅 Ketika kelas tidak dapat berlangsung sesuai rencana', html:`
+   <div class="card"><p>Sakit dan keadaan darurat bisa terjadi. Hal yang menentukan apakah keluarga dapat memakluminya adalah <strong>seberapa cepat mereka mendapatkan informasi dan apa yang dilakukan selanjutnya</strong>. Pesan yang dikirim 30 menit sebelum kelas dimulai, atau tutor yang tidak hadir tanpa pemberitahuan, adalah hal yang sering digambarkan keluarga sebagai <em>“tidak terorganisasi”</em> — dan sering kali menjadi momen ketika mereka mulai meminta pengembalian dana.</p></div>
+   ${doavoid(
+     ['Beri tahu Team Leader <strong>segera setelah Anda mengetahui</strong> bahwa Anda tidak dapat mengajar suatu kelas. Semakin cepat mereka mengetahuinya, semakin banyak pilihan yang tersedia (tutor pengganti atau tanggal baru).','Ikuti rencana yang telah disepakati dengan Team Leader, termasuk pesan yang akan disampaikan kepada keluarga.','Pertahankan jadwal kelas yang telah disepakati — setiap minggu, pada waktu yang sama.','Jika ada kelas yang terlewat, biarkan Team Leader yang memutuskan pengaturan kelas pengganti.'],
+     ['Membatalkan atau memindahkan jadwal kelas atas keputusan sendiri — tutor tidak berwenang menjadwalkan ulang kelas.','Memberi tahu keluarga secara langsung pada menit-menit terakhir tanpa koordinasi dengan Team Leader.','Menjanjikan kelas pengganti atau kompensasi.','Mengajar pada waktu yang berbeda dari jadwal yang telah disepakati, meskipun hanya “sekali ini saja”.']
+   )}
+  `},
+  {t:'🤝 Mengambil alih kelompok', html:`
+   <div class="card"><p>Keluarga memperhatikan pergantian tutor — terutama ketika mereka tidak mendapatkan pemberitahuan atau ketika setiap tutor baru memulai semuanya dari awal. Jika Anda mengambil alih suatu kelompok, pastikan pergantian tersebut terasa seperti kelanjutan pembelajaran, bukan memulai kembali dari nol.</p></div>
+   ${stepFlow([
+     {ic:'📖', label:'Baca komentar di BO dan periksa perkembangan kelompok sebelum mengajar untuk pertama kalinya.'},
+     {ic:'👋', label:'Perkenalkan diri kepada siswa dan, sesuai kesepakatan dengan Team Leader, kepada keluarga mereka.'},
+     {ic:'🔁', label:'Pertahankan rutinitas yang sudah mereka kenal: aturan, struktur kelas, dan cara mereka membagikan hasil pekerjaan.'},
+     {ic:'💬', label:'Tanyakan kepada siswa apa yang mereka sukai dari pelajaran sebelumnya.'}
+   ])}
+  `},
+  {t:'🧱 Batasan profesional', html:`
+   <div class="card"><p>Beberapa situasi sama sekali tidak berkaitan dengan kemampuan mengajar, tetapi dapat merusak kepercayaan keluarga dengan sangat cepat. Ketuk setiap bagian untuk melihat detailnya:</p></div>
+   ${symCards([
+     {ic:'🏷️', title:'Hanya Kodland, selama dan di sekitar kegiatan pembelajaran',
+      do:`Bicarakan hanya tentang kursus dan perangkat Kodland. Jika Anda menemukan masalah pada platform atau kursus, laporkan kepada Team Leader Anda.`,
+      avoid:`Mempromosikan platform lain, sekolah lain, atau menawarkan les privat Anda sendiri · berbicara negatif tentang platform atau kursus di depan siswa maupun keluarga.`},
+     {ic:'📵', title:'Komunikasi hanya melalui saluran resmi',
+      do:`Berkomunikasilah dengan keluarga melalui saluran yang digunakan oleh wilayah Anda untuk kegiatan pembelajaran Kodland. Di luar kelas, komunikasi Anda dilakukan dengan orang tua — bukan secara pribadi dengan anak.`,
+      avoid:`Menggunakan media sosial pribadi atau chat pribadi dengan siswa · mengajak siswa bermain game atau bertemu secara online setelah kelas · membagikan informasi kontak pribadi Anda.`},
+     {ic:'📷', title:'Kamera dan privasi',
+      do:`Ajak siswa untuk menyalakan kamera dengan sopan, cukup satu kali, lalu terima keputusan mereka. Beberapa siswa memilih untuk tidak menyalakan kamera karena alasan budaya, agama, atau pribadi. Sebagai alternatif, tawarkan penggunaan chat, reaksi, atau berbagi layar.`,
+      say:`<em>“Tidak masalah sama sekali — kamu tetap bisa berpartisipasi melalui chat atau dengan membagikan layar.”</em>`,
+      avoid:`Memaksa siswa menyalakan kamera atau menanyakan alasannya di depan kelompok · mengambil tangkapan layar atau foto siswa · membagikan gambar atau informasi pribadi siswa.`},
+     {ic:'🗨️', title:'Percakapan yang sesuai dengan usia siswa',
+      do:`Jaga percakapan ringan agar tetap sesuai dengan usia kelompok. Jika topik sensitif muncul, arahkan kembali pembicaraan ke materi pelajaran dengan tenang.`,
+      avoid:`Perdebatan mengenai politik atau agama, topik orang dewasa, atau masalah pribadi di depan siswa.`}
+   ])}
+   ${chatMock({
+     name:'Orang tua', sub:'online', avatar:'👨', time:'19:40',
+     msgs:[`Hai! Anak saya sangat menyukai Anda. Bisakah Anda memberikan les privat di luar Kodland? Kami akan membayar Anda secara langsung, sehingga biayanya lebih murah bagi kami.`],
+     title:'Bagaimana Anda harus menjawab?',
+     text:'Keluarga merasa puas dengan Anda — tetapi mereka meminta sesuatu yang melanggar batasan profesional. Ketuk setiap jawaban untuk melihat apa yang akan terjadi.',
+     opts:[
+      {t:`“Tentu! Kirimkan nomor Anda, nanti kita atur bersama.”`, ok:false, fb:`Hal ini akan membawa siswa keluar dari Kodland dan melanggar batasan profesional dalam peran Anda. Jangan pernah mengatur les privat dengan keluarga siswa Kodland.`},
+      {t:`“Terima kasih banyak, saya sangat senang dia menikmati pelajaran kita! Namun, saya hanya bisa mengajarnya melalui Kodland. Jika Anda menginginkan lebih banyak pelajaran atau format yang berbeda, Customer Service akan membantu Anda dengan pilihan-pilihannya.”`, ok:true, fb:`Hangat, jelas, dan profesional. Anda mengucapkan terima kasih, tetap berpegang pada batasan profesional, dan mengarahkan keluarga kepada pihak yang dapat menawarkan berbagai pilihan. Setelah itu, beri tahu Team Leader mengenai permintaan tersebut.`},
+      {t:`“Itu tidak diperbolehkan, tolong jangan tanyakan hal itu lagi.”`, ok:false, fb:`Batasan yang disampaikan memang benar, tetapi nadanya kurang tepat: keluarga bermaksud menyampaikan pujian. Tolak permintaan tersebut dengan ramah dan arahkan mereka ke Customer Service.`}
+     ]
+   })}
+  `}
+ ],
+ ix:{
+  title:'Keandalan dan batasan profesional — cek modul',
+  instr:'Klasifikasikan setiap situasi dan pilih tindakan yang paling tepat. Diperlukan nilai 70% untuk membuka daftar periksa terakhir.',
+  items:[
+   {type:'sort', prompt:'Tidak masalah atau melanggar batasan?', card:'Selama pelajaran berlangsung, ketika siswa sedang mengerjakan tugas, Anda membalas pesan dari orang tua siswa di kelompok lain.', zones:[{label:'✅ Tidak masalah', fb:'Belum tepat — waktu pelajaran adalah milik siswa yang sedang Anda ajar. Pesan dari keluarga lain harus menunggu hingga kelas selesai.'},{label:'🚫 Melanggar batasan', fb:'Benar — selama pelajaran berlangsung, perhatian Anda harus tetap tertuju pada kelompok tersebut. Keluarga akan memperhatikannya dan dapat menilai bahwa “tutornya tidak memperhatikan siswa”.'}], correctZone:1},
+   {type:'sort', prompt:'Tidak masalah atau melanggar batasan?', card:'Seorang siswi selalu mematikan kameranya karena alasan agama. Anda mengizinkannya berpartisipasi melalui chat dan berbagi layar.', zones:[{label:'✅ Tidak masalah', fb:'Benar — ajak siswa dengan sopan, terima jawabannya, dan tawarkan cara lain untuk berpartisipasi. Jangan pernah memaksa.'},{label:'🚫 Melanggar batasan', fb:'Belum tepat — menghormati alasan siswa dan menawarkan cara lain untuk berpartisipasi adalah tindakan yang benar.'}], correctZone:0},
+   {type:'choice', prompt:'Anda bangun dalam keadaan sakit dan mengetahui bahwa Anda tidak dapat mengajar kelas malam ini. Apa yang harus Anda lakukan?', opts:['Mengirim pesan kepada keluarga 30 menit sebelum kelas untuk membatalkannya.','Segera memberi tahu Team Leader agar mereka dapat mengatur tutor pengganti atau tanggal baru — kemudian ikuti rencana yang telah mereka tetapkan untuk keluarga.','Mengajar kelas dengan durasi lebih singkat dan mengakhirinya lebih awal.'], correct:1, fb:'Tutor tidak boleh membatalkan atau menjadwalkan ulang kelas atas keputusan sendiri. Semakin cepat Team Leader mengetahui situasinya, semakin banyak pilihan yang tersedia — dan keluarga akan menerima informasi berdasarkan rencana yang jelas, bukan pemberitahuan pada menit-menit terakhir.'},
+   {type:'sort', prompt:'Tidak masalah atau melanggar batasan?', card:'Setelah kelas selesai, Anda mengajak dua siswa untuk bermain Roblox bersama secara online.', zones:[{label:'✅ Tidak masalah', fb:'Belum tepat — menghubungi siswa di luar jam pelajaran, terutama untuk bermain secara pribadi, melanggar batasan profesional, meskipun terlihat sebagai tindakan yang ramah.'},{label:'🚫 Melanggar batasan', fb:'Benar — di luar kelas, komunikasi Anda dengan siswa harus dilakukan melalui orang tua dan saluran resmi. Tidak boleh ada komunikasi pribadi atau bermain bersama siswa.'}], correctZone:1},
+   {type:'choice', prompt:'Anda akan mengambil alih kelompok dari tutor lain. Apa yang harus Anda lakukan sebelum mengajar untuk pertama kalinya?', opts:['Memulai kembali kursus dari pelajaran pertama agar Anda mengetahui kemampuan setiap siswa.','Tidak perlu melakukan persiapan khusus — siswa akan terbiasa dengan Anda.','Membaca komentar di BO dan memeriksa perkembangan kelompok, merencanakan cara memperkenalkan diri, serta mempertahankan rutinitas yang sudah dikenal oleh kelompok tersebut.'], correct:2, fb:'Kesinambungan pembelajaran membuat pergantian tutor terasa aman dan nyaman bagi siswa. Kenali riwayat kelompok, perkenalkan diri, dan pertahankan rutinitas yang sudah mereka kenal.'}
   ]
  }
 },
@@ -261,7 +386,14 @@ const CONTENT = {
      'Saat penjelasan pertama saya tidak berhasil, saya mengubah pendekatannya — sudut pandang yang berbeda, peragaan, potongan yang lebih kecil — alih-alih mengulanginya',
      'Saya mengenal siswa saya dan membangun ruang aman di mana kesalahan tidak dihakimi',
      'Saya memberikan umpan balik yang spesifik dan membangun: apa yang berhasil, dan apa yang bisa dicoba berikutnya — tidak pernah hanya “bagus”',
-     'Saya juga mengirim pesan kepada keluarga tentang kabar baik, bukan hanya saat ada yang salah'
+     'Saya juga mengirim pesan kepada keluarga tentang kabar baik, bukan hanya saat ada yang salah',
+     'Saya memberikan satu instruksi dalam satu waktu dan memastikan pemahaman dengan bertanya “Coba tunjukkan” atau “Apa yang akan kamu lakukan pertama kali?” — diam bukan berarti memahami.',
+     'Saya menyesuaikan tempo dan penggunaan kata-kata dengan usia siswa: langkah yang sangat singkat dan didemonstrasikan untuk anak-anak yang lebih kecil, serta istilah baru yang dijelaskan menggunakan contoh.',
+     'Saya menghindari ungkapan yang menunjukkan ketidaksabaran seperti “Saya sudah menjelaskan ini” dan membagikan perhatian secara adil kepada seluruh anggota kelompok.',
+     'Saya bergabung 15 menit lebih awal, memulai kelas tepat waktu, memberikan pelajaran secara penuh, dan tidak pernah mengakhiri kelas lebih awal.',
+     'Jika saya tidak dapat mengajar suatu kelas, saya segera memberi tahu Team Leader setelah mengetahuinya — saya tidak pernah membatalkan, memindahkan jadwal, atau menjanjikan kelas pengganti atas keputusan sendiri.',
+     'Ketika mengambil alih suatu kelompok, saya terlebih dahulu membaca komentar di BO, memperkenalkan diri, dan mempertahankan rutinitas yang sudah dikenal oleh kelompok tersebut.',
+     'Saya menjaga batasan profesional: hanya menggunakan platform Kodland, berkomunikasi melalui saluran resmi, memberikan perhatian penuh selama pelajaran, serta menghormati pilihan kamera dan privasi setiap siswa.'
    ])}
   `},  {t:'', html:`
    ${co('co-star','⭐',`<p><strong>Itulah keseluruhan mini-training ini.</strong> Jika sudah siap, lanjutkan — lalu selesaikan DST di LMS untuk menuntaskan tugasnya.</p>`)}

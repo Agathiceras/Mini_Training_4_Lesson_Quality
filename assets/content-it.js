@@ -22,7 +22,7 @@ const CONTENT = {
     heroEyebrow:"🎯 Mini-training",
     heroTitle:"Uno sguardo onesto alla <span class=\"h-pill\">qualità della lezione</span>",
     heroIntro:"Hai ricevuto questa formazione perché alcuni dei tuoi studenti hanno chiesto un rimborso per problemi legati alla qualità della lezione. Qui ti mostriamo cosa puoi fare come tutor e come gestire queste situazioni.",
-    heroWork:"Completa 5 brevi moduli. Per sbloccare il modulo successivo devi ottenere almeno il 70% nella verifica di ciascun modulo. In tutto, circa 25–30 minuti.",
+    heroWork:"Completa i 6 brevi moduli. Per sbloccare il modulo successivo, devi ottenere almeno il 70% nel test di ciascun modulo. Durata totale: circa 35–40 minuti.",
     startBtn:"🚀 Inizia la formazione",
     pathLabel:'Il tuo percorso di apprendimento',
     devTitle:'Dev: sblocca tutti i moduli per la revisione',
@@ -202,8 +202,8 @@ const CONTENT = {
 },
 {id:'soft', numLabel:'Modulo 3', emoji:'🤝', color:'var(--coral)',
  title:'Soft skill',
- desc:'Le abitudini, oltre alla padronanza della materia, che rendono davvero piacevole stare a lezione.',
- obj:'Applicare le soft skill che trasformano la conoscenza della materia in una lezione davvero buona: flessibilità cognitiva, conoscenza dei tuoi studenti, un ambiente in cui sia permesso sbagliare, motivazione e feedback specifici.',
+ desc:'Le abitudini che vanno oltre la conoscenza della materia e che rendono una lezione piacevole per gli studenti. Includono il ritmo della lezione, la verifica della comprensione e la pazienza nel modo di comunicare.',
+ obj:'Applicare le competenze trasversali che trasformano la conoscenza della materia in una lezione davvero efficace: flessibilità cognitiva, conoscenza dei propri studenti, un ambiente sicuro in cui poter commettere errori, motivazione, un ritmo adeguato all’età, verifica della comprensione, comunicazione paziente, attenzione equa e feedback specifici.',
  sections:[
   {t:'🤝 Non basta conoscere la materia', html:`
    <div class="card"><p>Padroneggiare la materia è necessario, ma non è ciò che rende piacevole stare a lezione. Questo nasce da un insieme di abitudini che non hanno nulla a che fare con le competenze tecniche.</p></div>
@@ -221,6 +221,56 @@ const CONTENT = {
      ['“Bravo!” senza alcun riferimento a ciò che è stato fatto', '“È sbagliato” senza indicare cosa provare invece', 'Feedback che andrebbero ugualmente bene per il lavoro di qualsiasi studente']
    )}
   `},
+  {t:'🐢 Ritmo della lezione e verifica della comprensione — soprattutto con i bambini più piccoli', html:`
+   <div class="card"><p>Una lezione può essere corretta e, allo stesso tempo, procedere troppo velocemente per il bambino che hai davanti. Le famiglie spesso descrivono questa situazione dicendo: <em>«Il tutor è passato all’argomento successivo senza spiegare»</em> oppure <em>«Il metodo era adatto a bambini più grandi»</em>. La soluzione è rallentare i passaggi, usare parole che il bambino conosce e <strong>verificare che abbia capito prima di andare avanti</strong>. Non basta chiedere «Ci sono domande?» e proseguire.</p></div>
+   ${iconGrid([
+     {ic:'1️⃣', html:`<strong>Un’istruzione alla volta.</strong> Spiega un passaggio, aspetta che venga completato e poi passa al successivo. Non inserire tre istruzioni in un’unica frase.`},
+     {ic:'🖥️', html:`<strong>«Fammi vedere».</strong> Chiedi allo studente di condividere lo schermo: quello che vedi ti dà molte più informazioni rispetto a un semplice «Sì, ho capito».`},
+     {ic:'🗣️', html:`<strong>«Cosa farai per prima cosa?».</strong> Chiedere allo studente di ripetere il passaggio successivo permette di individuare eventuali difficoltà prima che inizi.`},
+     {ic:'👍', html:`<strong>Segnali rapidi:</strong> pollice in su, un’emoji o una reazione quando un passaggio è stato completato. In questo modo puoi avere una visione immediata di tutto il gruppo.`},
+     {ic:'⏳', html:`<strong>Tempo di attesa.</strong> Dopo aver fatto una domanda, conta fino a cinque prima di rispondere tu stesso o dare la parola a qualcun altro.`},
+     {ic:'📖', html:`<strong>Parole che conoscono.</strong> Spiega i termini nuovi la prima volta che li utilizzi, accompagnandoli con un esempio legato alla loro vita quotidiana.`}
+   ])}
+   ${dimTabs([
+     {ic:'🧒', title:'Dai 6 agli 8 anni',
+      intro:'Passaggi brevi, tante dimostrazioni e pochissime parole.',
+      tips:[
+       {ic:'👀', html:`<strong>Mostra ogni passaggio</strong> sul tuo schermo prima che gli studenti provino a svolgerlo e assicurati che ogni passaggio preveda una sola azione.`},
+       {ic:'🔤', html:`<strong>Alcuni stanno ancora imparando a leggere.</strong> Leggi le istruzioni ad alta voce e usa icone, colori e indicazioni visive invece di testi lunghi.`},
+       {ic:'🧸', html:`<strong>Esempi quotidiani:</strong> <em>«Un ciclo è come lavarsi i denti: ripeti lo stesso movimento più e più volte».</em>`},
+       {ic:'🎉', html:`<strong>Verifica spesso la comprensione e festeggia</strong> ogni piccolo traguardo raggiunto.`}
+      ]},
+     {ic:'🧑', title:'Dai 9 agli 11 anni',
+      intro:'Sono in grado di seguire una breve sequenza di passaggi, purché tu verifichi che abbiano capito.',
+      tips:[
+       {ic:'📋', html:`<strong>Proponi due o tre passaggi e scrivili nella chat</strong> sotto forma di elenco, così potranno consultarli quando ne avranno bisogno.`},
+       {ic:'🗣️', html:`Prima di iniziare, <strong>chiedi loro di spiegare con parole proprie</strong> cosa faranno.`},
+       {ic:'🔍', html:`<strong>Controlla i loro schermi</strong> dopo ogni passaggio, non soltanto alla fine.`},
+       {ic:'🧩', html:`<strong>Introduci i nuovi termini con esempi</strong> che conoscono, come quelli tratti dai videogiochi o dalle app che utilizzano.`}
+      ]},
+     {ic:'🧑‍🎓', title:'Dai 12 anni in su',
+      intro:'Concedi maggiore autonomia, ma non confondere il silenzio con la comprensione.',
+      tips:[
+       {ic:'🧠', html:`<strong>Spiega il perché,</strong> non soltanto il come. Gli studenti più grandi partecipano maggiormente quando comprendono la logica alla base di un’attività.`},
+       {ic:'🗳️', html:`<strong>Utilizza verifiche anonime</strong> (un sondaggio o una reazione): gli adolescenti raramente dicono «Non ho capito» davanti ai propri compagni.`},
+       {ic:'🔒', html:`<strong>Offri la possibilità di fare domande in privato tramite la chat,</strong> così potranno esprimere i propri dubbi senza essere visti dagli altri.`},
+       {ic:'🚀', html:`<strong>Procedi più velocemente con chi dimostra di aver capito</strong> e proponi una sfida aggiuntiva, senza lasciare indietro gli altri.`}
+      ]}
+   ],'✅ Questi sono i tre gruppi di età.')}
+  `},
+  {t:'🗣️ Pazienza nel modo di comunicare — frasi da evitare e cosa dire al loro posto', html:`
+   <div class="card"><p>Gli studenti ricordano più come li hai fatti sentire che ciò che hai spiegato. Una sola frase detta con impazienza può far smettere un bambino di fare domande e portare una famiglia a descrivere l’intero corso dicendo: <em>«Il tutor non ha pazienza»</em>. Quando siamo stanchi o abbiamo fretta, è facile ricorrere a queste espressioni. Impara a riconoscerle e tieni pronta un’alternativa:</p></div>
+   <div class="tbl-wrap"><table>
+    <tr><th>🚫 Invece di dire…</th><th>✅ Prova a dire…</th></tr>
+    <tr><td><em>«L’ho già spiegato».</em></td><td><em>«Lascia che te lo mostri in un altro modo».</em></td></tr>
+    <tr><td><em>«È facile».</em></td><td><em>«Questo esercizio richiede un po’ di pratica: proviamoci insieme».</em></td></tr>
+    <tr><td><em>«Sbrigati, ti stiamo aspettando tutti».</em></td><td><em>«Prenditi il tuo tempo. Nel frattempo, gli altri possono provare la sfida 2».</em></td></tr>
+    <tr><td><em>«Non adesso».</em> (a uno studente che alza la mano)</td><td><em>«Ti ho visto, Leo. Tocca a te tra poco».</em></td></tr>
+    <tr><td><em>«Guarda, tutti gli altri ci sono riusciti».</em></td><td><em>«Hai già completato correttamente la prima parte. Vediamo insieme la successiva».</em></td></tr>
+    <tr><td><em>«È sbagliato».</em></td><td><em>«Ci sei quasi! Cosa succede se modifichi questa riga?».</em></td></tr>
+   </table></div>
+   ${co('co-idea','⚖️',`<p><strong>La pazienza significa anche essere equi.</strong> Distribuisci la tua attenzione: alterna i turni, coinvolgi studenti diversi e controlla chi ha bisogno di più tempo con la stessa frequenza di chi procede velocemente. Un bambino che sente che il tutor parla soltanto con gli studenti «bravi» smette di impegnarsi.</p>`)}
+  `},
   {t:'💌 Fatti sentire non solo per le cattive notizie', html:`
    <div class="card"><p>Un genitore che ti sente solo quando qualcosa non va inizia ad associare i tuoi messaggi ai problemi. Scrivi anche per festeggiare qualcosa di bello, non solo per segnalare preoccupazioni.</p></div>
    ${co('co-star','⭐',`<p>Questa sola abitudine — scrivere una volta, di tua iniziativa, su qualcosa che lo studente ha fatto bene — cambia il modo in cui la famiglia leggerà tutto ciò che invierai in seguito.</p>`)}
@@ -228,12 +278,87 @@ const CONTENT = {
  ],
  ix:{
   title:'Soft skill — verifica del modulo',
-  instr:'70% per sbloccare la checklist finale.',
+  instr:'È necessario ottenere il 70% per sbloccare il modulo successivo.',
   items:[
    {type:'choice', prompt:'Uno studente non segue la tua prima spiegazione. Cosa significa, in questo caso, flessibilità cognitiva?', opts:['Ripetere la stessa spiegazione, più lentamente','Andare avanti e riprenderla alla fine della lezione','Cambiare approccio: un’angolazione diversa, una dimostrazione, un passaggio più piccolo'], correct:2, fb:'Flessibilità significa cambiare approccio, non solo ripetere.'},
    {type:'sort', prompt:'Tesoro o spazzatura? È un feedback costruttivo?', card:'“Hai fatto funzionare il ciclo da solo — prova ad applicare la stessa idea alla sezione successiva.”', zones:[{label:'💎 Tesoro — costruttivo', fb:'Esatto — è specifico su cosa ha funzionato e indica un passo successivo.'},{label:'🗑️ Spazzatura — generico', fb:'Non proprio — questo indica esattamente cosa ha fatto lo studente e cosa provare dopo. È costruttivo.'}], correctZone:0},
    {type:'sort', prompt:'Tesoro o spazzatura? È un feedback costruttivo?', card:'“Bravi tutti oggi!”', zones:[{label:'💎 Tesoro — costruttivo', fb:'Non proprio — è gentile, ma non dice a nessuno cosa ripetere o su cosa costruire.'},{label:'🗑️ Spazzatura — generico', fb:'Esatto — gentile, ma andrebbe bene per chiunque. Indica concretamente cosa è stato fatto bene.'}], correctZone:1},
-   {type:'choice', prompt:'Perché scrivere a un genitore per qualcosa di positivo, e non solo per i problemi?', opts:['I genitori se lo aspettano come una formalità','Cambia il modo in cui la famiglia leggerà tutto ciò che invierai in seguito','Serve solo quando i voti dello studente sono bassi'], correct:1, fb:'I messaggi positivi, mandati di tua iniziativa, costruiscono la fiducia che in futuro rende più facili le conversazioni difficili.'}
+   {type:'choice', prompt:'Perché scrivere a un genitore per qualcosa di positivo, e non solo per i problemi?', opts:['I genitori se lo aspettano come una formalità','Cambia il modo in cui la famiglia leggerà tutto ciò che invierai in seguito','Serve solo quando i voti dello studente sono bassi'], correct:1, fb:'I messaggi positivi, mandati di tua iniziativa, costruiscono la fiducia che in futuro rende più facili le conversazioni difficili.'},
+   {type:'choice', prompt:'Hai spiegato un passaggio a un gruppo di bambini di 7 anni e chiedi: «Ci sono domande?». Nessuno risponde. Cosa fai dopo?', opts:['Vai avanti: il silenzio significa che hanno capito.','Verifichi la comprensione: «Fatemi vedere il vostro schermo» oppure «Cosa farete per prima cosa?». Mostri nuovamente il procedimento a chi ha difficoltà.','Ripeti la stessa spiegazione più velocemente, così da avere tempo per passare al passaggio successivo.'], correct:1, fb:'Il silenzio non significa che gli studenti abbiano capito, soprattutto quando si tratta di bambini piccoli. Una rapida verifica come «Fammi vedere» permette di individuare eventuali difficoltà prima di proseguire.'},
+   {type:'sort', prompt:'Tesoro o spazzatura? È una risposta paziente?', card:'Uno studente pone la stessa domanda per la seconda volta. Tu rispondi: «L’ho già spiegato».', zones:[{label:'💎 Tesoro — paziente', fb:'Non proprio. Questa risposta fa sentire lo studente come se avrebbe già dovuto capire e molti bambini smettono di fare domande dopo aver sentito una frase del genere.'},{label:'🗑️ Spazzatura — impaziente', fb:'Corretto! Prova invece a dire: «Lascia che te lo mostri in un altro modo». Se uno studente fa una seconda domanda, significa che la prima spiegazione non è stata abbastanza chiara.'}], correctZone:1}
+  ]
+ }
+},
+{id:'professional', numLabel:'Modulo 4', emoji:'🧱', color:'var(--coral)',
+ title:'Affidabilità e limiti professionali',
+ desc:'Iniziare puntualmente e svolgere l’intera lezione, sapere cosa fare quando una lezione non può svolgersi come previsto, prendere in carico un gruppo e rispettare i limiti professionali che proteggono gli studenti, le famiglie e te.',
+ obj:'Iniziare puntualmente e svolgere l’intera lezione, sapere chi decide quando è necessario spostare una lezione, prendere in carico un gruppo senza difficoltà e rispettare i limiti professionali relativi alle piattaforme, ai contatti, all’attenzione, alla videocamera e alla privacy.',
+ sections:[
+  {t:'⏰ Sempre puntuali — per tutta la durata della lezione', html:`
+   <div class="card"><p>Per una famiglia, la lezione rappresenta un momento per cui ha pagato e attorno al quale ha organizzato la propria giornata. Un tutor che inizia con dieci minuti di ritardo, fa una pausa non prevista o termina in anticipo è qualcosa che la famiglia nota immediatamente, molto prima di valutare i contenuti. L’affidabilità è parte integrante della qualità della lezione.</p></div>
+   ${rclock([
+     {ic:'🧰', when:'15 minuti prima', t:'Preparati in anticipo', d:'Collegati prima dell’orario previsto, verifica la connessione, la videocamera e il microfono, e apri il gruppo e la lezione in BO.'},
+     {ic:'🟢', when:'Orario di inizio', t:'Inizia puntualmente', d:'I primi minuti servono per il riscaldamento iniziale, non per preparare la tua attrezzatura.'},
+     {ic:'🎯', when:'Durante la lezione', t:'L’intera lezione', d:'Svolgi tutte le fasi previste, senza pause non programmate o attività estranee alla lezione.'},
+     {ic:'🏁', when:'Orario di fine', t:'Termina puntualmente', d:'Non terminare mai in anticipo. Il riepilogo finale e l’anteprima della lezione successiva fanno parte della sessione.'}
+   ])}
+   ${co('co-danger','🚨',`<p><strong>Sei in ritardo o non riesci a collegarti?</strong> Avvisa immediatamente il tuo Team Leader. Non lasciare gli studenti ad aspettare senza spiegazioni. Una lezione che inizia in ritardo non viene «recuperata» terminando qualche minuto dopo: informa il tuo Team Leader, così potrà decidere cosa proporre alla famiglia.</p>`)}
+  `},
+  {t:'📅 Quando una lezione non può svolgersi come previsto', html:`
+   <div class="card"><p>Malattie ed emergenze possono capitare. Ciò che determina se una famiglia sarà comprensiva è <strong>quanto presto viene informata e cosa succede dopo</strong>. Un messaggio inviato trenta minuti prima della lezione o un tutor che semplicemente non si presenta sono situazioni che le famiglie descrivono come <em>«disorganizzate»</em> e spesso rappresentano il momento in cui decidono di chiedere un rimborso.</p></div>
+   ${doavoid(
+     ['Informa il tuo Team Leader <strong>non appena sai</strong> che non potrai svolgere una lezione. Prima lo saprà, più opzioni avrà a disposizione (un tutor sostitutivo o una nuova data).','Segui il piano concordato con il tuo Team Leader, compreso il messaggio da inviare alla famiglia.','Rispetta l’orario concordato per le lezioni: lo stesso orario, ogni settimana.','Se una lezione è stata persa, lascia che sia il tuo Team Leader a decidere come recuperarla.'],
+     ['Annullare o spostare una lezione autonomamente: i tutor non riprogrammano le lezioni.','Avvisare direttamente la famiglia all’ultimo minuto, senza aver prima consultato il tuo Team Leader.','Promettere una lezione di recupero o un risarcimento.','Svolgere la lezione in un orario diverso da quello concordato, anche se «solo per questa volta».']
+   )}
+  `},
+  {t:'🤝 Prendere in carico un gruppo', html:`
+   <div class="card"><p>Le famiglie notano i cambiamenti di tutor, soprattutto quando nessuno le ha informate o quando ogni nuovo tutor ricomincia da zero. Se prendi in carico un gruppo, fai in modo che il cambiamento rappresenti una continuità, non un nuovo inizio.</p></div>
+   ${stepFlow([
+     {ic:'📖', label:'Leggi i commenti in BO e controlla i progressi del gruppo prima della tua prima lezione.'},
+     {ic:'👋', label:'Presentati agli studenti e, in base a quanto concordato con il tuo Team Leader, anche alle famiglie.'},
+     {ic:'🔁', label:'Mantieni le abitudini che già conoscono: le regole, la struttura delle lezioni e il modo in cui condividono i loro lavori.'},
+     {ic:'💬', label:'Chiedi agli studenti cosa è piaciuto loro delle lezioni precedenti.'}
+   ])}
+  `},
+  {t:'🧱 I limiti professionali', html:`
+   <div class="card"><p>Alcune situazioni non riguardano direttamente le competenze didattiche, ma possono compromettere la fiducia di una famiglia altrettanto rapidamente. Seleziona ciascuna voce:</p></div>
+   ${symCards([
+     {ic:'🏷️', title:'Solo Kodland, durante e al di fuori della lezione',
+      do:`Parla esclusivamente dei corsi e degli strumenti di Kodland. Se noti un problema con la piattaforma o con un corso, segnalalo al tuo Team Leader.`,
+      avoid:`Promuovere un’altra piattaforma, un’altra scuola o le tue lezioni private · parlare negativamente della piattaforma o del corso davanti agli studenti o alle famiglie.`},
+     {ic:'📵', title:'Contatti solo attraverso i canali ufficiali',
+      do:`Comunica con le famiglie attraverso i canali utilizzati dalla tua regione per le lezioni di Kodland. Al di fuori delle lezioni, i tuoi contatti devono essere con i genitori, non direttamente con i bambini.`,
+      avoid:`Utilizzare i social media personali o chat private per comunicare con gli studenti · invitarli a giocare o incontrarsi online dopo la lezione · condividere i tuoi dati di contatto personali.`},
+     {ic:'📷', title:'Videocamera e privacy',
+      do:`Invita gentilmente gli studenti ad accendere la videocamera una sola volta e rispetta la loro risposta. Alcuni studenti preferiscono tenerla spenta per motivi culturali, religiosi o personali. Offri loro altre modalità di partecipazione, come la chat, le reazioni o la condivisione dello schermo.`,
+      say:`<em>«Nessun problema! Puoi partecipare tramite la chat o condividendo il tuo schermo».</em>`,
+      avoid:`Insistere o chiedere il motivo davanti al gruppo · fare screenshot o fotografie degli studenti · condividere immagini o informazioni personali degli studenti.`},
+     {ic:'🗨️', title:'Conversazioni adatte all’età',
+      do:`Mantieni le conversazioni informali leggere e adatte all’età del gruppo. Se emerge un argomento delicato, riporta con calma la conversazione alla lezione.`,
+      avoid:`Dibattiti sulla politica o sulla religione, argomenti per adulti o problemi personali davanti agli studenti.`}
+   ])}
+   ${chatMock({
+     name:'Genitore', sub:'online', avatar:'👨', time:'19:40',
+     msgs:[`Ciao! A mio figlio piaci molto. Potresti fargli delle lezioni private al di fuori di Kodland? Ti pagheremmo direttamente, per noi sarebbe più economico.`],
+     title:'Come rispondi?',
+     text:'La famiglia è soddisfatta di te e ti chiede qualcosa che supera i limiti professionali. Seleziona ogni risposta per scoprire cosa succede.',
+     opts:[
+      {t:`«Certo! Mandami il tuo numero e ci organizziamo».`, ok:false, fb:`In questo modo porti lo studente fuori da Kodland e violi i limiti professionali del tuo ruolo. Non concordare mai lezioni private con una famiglia di Kodland.`},
+      {t:`«Grazie mille! Sono davvero felice che gli piacciano le nostre lezioni! Tuttavia, posso fare lezione con lui solo tramite Kodland. Se desiderate altre lezioni o un formato diverso, il Servizio Clienti potrà aiutarvi a conoscere le opzioni disponibili».`, ok:true, fb:`È una risposta cordiale, chiara e professionale. Ringrazi la famiglia, mantieni i limiti e la indirizzi alle persone che possono proporre altre soluzioni. Successivamente, informa il tuo Team Leader della richiesta.`},
+      {t:`«Non è consentito. Per favore, non chiedermelo più».`, ok:false, fb:`Il limite che stabilisci è corretto, ma il tono non lo è: la famiglia intendeva la richiesta come un complimento. Rifiuta gentilmente e indirizzala al Servizio Clienti.`}
+     ]
+   })}
+  `}
+ ],
+ ix:{
+  title:'Affidabilità e limiti professionali — verifica del modulo',
+  instr:'Classifica ogni situazione e scegli il comportamento migliore. È necessario ottenere il 70% per sbloccare la checklist finale.',
+  items:[
+   {type:'sort', prompt:'Va bene o supera un limite professionale?', card:'Durante la lezione, mentre gli studenti lavorano, rispondi a un messaggio del genitore di un altro gruppo.', zones:[{label:'✅ Va bene', fb:'Non proprio. Il tempo della lezione appartiene a questi studenti. I messaggi delle altre famiglie possono aspettare fino al termine della lezione.'},{label:'🚫 Supera un limite', fb:'Corretto! Durante la lezione, la tua attenzione deve essere rivolta al gruppo. Le famiglie lo notano e possono pensare che «il tutor non stesse prestando attenzione».'}], correctZone:1},
+   {type:'sort', prompt:'Va bene o supera un limite professionale?', card:'Una studentessa tiene la videocamera spenta per motivi religiosi. Le permetti di partecipare tramite la chat e la condivisione dello schermo.', zones:[{label:'✅ Va bene', fb:'Corretto! Invita gentilmente ad accendere la videocamera, rispetta la risposta e offri altre modalità di partecipazione. Non insistere mai.'},{label:'🚫 Supera un limite', fb:'Non proprio. Rispettare le ragioni della studentessa e offrirle altri modi per partecipare è esattamente la cosa giusta da fare.'}], correctZone:0},
+   {type:'choice', prompt:'Ti svegli e stai male, quindi sai che non potrai svolgere la lezione prevista per questa sera. Cosa fai?', opts:['Mandi un messaggio alla famiglia 30 minuti prima della lezione per annullarla.','Informi immediatamente il tuo Team Leader, affinché possa organizzare un tutor sostitutivo o una nuova data, e segui le sue indicazioni su come comunicare la situazione alla famiglia.','Svolgi una lezione più breve e termini in anticipo.'], correct:1, fb:'I tutor non annullano né riprogrammano autonomamente le lezioni. Prima il tuo Team Leader viene informato, più opzioni avrà a disposizione e la famiglia riceverà la comunicazione nell’ambito di un piano, non all’ultimo minuto.'},
+   {type:'sort', prompt:'Va bene o supera un limite professionale?', card:'Dopo la lezione, inviti due studenti a giocare insieme online a Roblox.', zones:[{label:'✅ Va bene', fb:'Non proprio. Mantenere i contatti con gli studenti al di fuori della lezione, soprattutto per giocare in privato, supera i limiti professionali, anche se l’invito sembra amichevole.'},{label:'🚫 Supera un limite', fb:'Corretto! Al di fuori della lezione, i tuoi contatti devono essere con i genitori e attraverso i canali ufficiali. Non mantenere contatti privati e non giocare con gli studenti.'}], correctZone:1},
+   {type:'choice', prompt:'Stai per prendere in carico un gruppo che prima era seguito da un altro tutor. Cosa dovresti fare prima della tua prima lezione?', opts:['Ricominciare il corso dalla lezione 1 per capire a che punto si trova ciascuno.','Non fare nulla di particolare: gli studenti si abitueranno a te.','Leggere i commenti in BO e controllare i progressi del gruppo, pianificare come presentarti e mantenere le abitudini che il gruppo già conosce.'], correct:2, fb:'La continuità rende il cambio di tutor un’esperienza più serena e sicura. Conosci la storia del gruppo, presentati e mantieni le abitudini che gli studenti già conoscono.'}
   ]
  }
 },
@@ -261,7 +386,14 @@ const CONTENT = {
      'Quando la mia prima spiegazione non funziona, cambio approccio — un’angolazione diversa, una dimostrazione, un passaggio più piccolo — invece di ripeterla',
      'Conosco i miei studenti e creo uno spazio sicuro in cui gli errori non vengono giudicati',
      'Do feedback specifici e costruttivi: cosa ha funzionato e cosa provare dopo — mai solo “bravo”',
-     'Scrivo alle famiglie anche per le buone notizie, non solo quando qualcosa va storto'
+     'Scrivo alle famiglie anche per le buone notizie, non solo quando qualcosa va storto',
+     'Do un’istruzione alla volta e verifico la comprensione con domande come «Fammi vedere» o «Cosa farai per prima cosa?». Il silenzio non significa che gli studenti abbiano capito.',
+     'Adatto il ritmo e il linguaggio all’età: utilizzo passaggi molto brevi e dimostrazioni per i più piccoli e spiego i nuovi termini con degli esempi.',
+     'Evito frasi impazienti come «L’ho già spiegato» e distribuisco equamente la mia attenzione tra tutti i membri del gruppo.',
+     'Mi collego 15 minuti prima, inizio puntualmente, svolgo l’intera lezione e non termino mai in anticipo.',
+     'Se non posso svolgere una lezione, informo il mio Team Leader non appena lo so. Non annullo, sposto o prometto autonomamente una lezione di recupero.',
+     'Quando prendo in carico un gruppo, leggo prima i commenti in BO, mi presento e mantengo le abitudini che il gruppo già conosce.',
+     'Rispetto i limiti professionali: utilizzo solo le piattaforme di Kodland, comunico attraverso i canali ufficiali, dedico tutta la mia attenzione alla lezione e rispetto le decisioni di ogni studente riguardo alla videocamera e alla propria privacy.'
    ])}
   `},  {t:'', html:`
    ${co('co-star','⭐',`<p><strong>Questo è tutto il mini-training.</strong> Quando sei pronto, continua — poi completa il DST nell’LMS per chiudere l’attività.</p>`)}
