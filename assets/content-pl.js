@@ -222,7 +222,7 @@ const CONTENT = {
    )}
   `},
   {t:'🐢 Tempo lekcji i sprawdzanie zrozumienia materiału — szczególnie w przypadku młodszych dzieci', html:`
-   <div class="card"><p>Lekcja może być poprawnie przeprowadzona, a mimo to przebiegać zbyt szybko dla dziecka, które masz przed sobą. Rodzice opisują takie sytuacje na przykład słowami: <em>„tutor przeszedł dalej, nie wyjaśniając zagadnienia”</em> lub <em>„metoda była odpowiednia dla starszych dzieci”</em>. Rozwiązaniem jest wolniejsze omawianie kolejnych kroków, używanie słów, które dziecko zna, oraz <strong>sprawdzanie, czy wszystko zrozumiało, zanim przejdziesz dalej</strong>. Nie wystarczy zapytać „Czy są jakieś pytania?” i kontynuować lekcję.</p></div>
+   <div class="card"><p>Lekcja może być poprawnie przeprowadzona, a mimo to przebiegać zbyt szybko dla dziecka, które masz przed sobą. Rodzice opisują takie sytuacje na przykład słowami: <em>„tutor przeszedł dalej, nie wyjaśniając zagadnienia”</em> lub <em>„metoda była odpowiednia dla starszych dzieci”</em>. Rozwiązaniem jest wolniejsze omówienie kolejnych kroków, używanie słów, które dziecko zna, oraz <strong>sprawdzanie, czy wszystko zrozumiało, zanim przejdziesz dalej</strong>. Nie wystarczy zapytać „Czy są jakieś pytania?” i kontynuować lekcję.</p></div>
    ${iconGrid([
      {ic:'1️⃣', html:`<strong>Jedno polecenie na raz.</strong> Przedstaw jeden krok, poczekaj, aż uczeń go wykona, a dopiero potem przejdź do następnego. Nie łącz trzech instrukcji w jednym zdaniu.`},
      {ic:'🖥️', html:`<strong>„Pokaż mi”.</strong> Poproś ucznia o udostępnienie ekranu. To, co zobaczysz, powie Ci znacznie więcej niż samo „tak, rozumiem”.`},
